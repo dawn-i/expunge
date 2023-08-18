@@ -5,7 +5,7 @@
   xmlns:fb="http://www.facebook.com/2008/fbml"
 >
   <head>
-    <title>Delaware expungement eligibility</title>
+    <title>Expungement Eligibility in Delaware</title>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <meta
       name="viewport"
@@ -14,16 +14,20 @@
     <meta name="apple-mobile-web-app-capable" content="no" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Delaware expungement eligibility" />
+    <meta property="og:title" content="Expungement Eligibility in Delaware" />
     <meta
       property="og:description"
-      content="If you are a defender office interested in making your own, please don't hesitate to connect with our volunteer programmer, Dawn I, to help you out."
+      content="Find out if your Delaware criminal record can be expunged."
+    />
+    <meta
+      property="article:author"
+      content="https://www.facebook.com/dawnippolito/"
     />
     <meta property="og:image" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link
       rel="apple-touch-icon"
-      href="https://ods.delaware.gov/wp-content/themes/dosgic_ODS_theme/img/apple-icon-60x60.png"
+      href="https://ods.delaware.gov/wp-content/themes/dosgic_ODS_theme/img/apple-icon-57x57.png"
     />
     <link
       rel="stylesheet"
@@ -54,55 +58,38 @@
 
       div.main {
         min-width: 300px;
-
         max-width: 650px;
-
         margin: 0 auto;
-
         padding: 0 5px 0 5px;
       }
 
       div.frame {
         float: left;
-
         width: 100%;
-
         margin: 5px 0 5px 0;
       }
 
       div.full {
         float: left;
-
         width: 100%;
       }
 
       .button {
         padding: 8px;
-
         margin: 8px 0 0px 0;
-
         width: 100%;
       }
 
       div.question_text {
         float: left;
-
         font-family: Verdana, Geneva, sans-serif;
-
         font-size: 14px;
-
         line-height: 20px;
-
         color: #ffffff;
-
         min-width: 30px;
-
         background: #5c6770;
-
         border-radius: 15px;
-
         padding: 10px 15px 14px 15px;
-
         margin-right: 45px;
       }
 
@@ -115,241 +102,185 @@
 
       div.question_arrow {
         float: left;
-
         width: 0;
-
         height: 0;
-
         border-left: 5px solid transparent;
-
         border-right: 10px solid transparent;
-
         border-top: 15px solid #5c6770;
-
         margin: 0 20px;
       }
 
       div.ans_text {
         float: right;
-
         font-family: Verdana, Geneva, sans-serif;
-
         font-size: 14px;
-
         line-height: 20px;
-
-        color: #ffffff;
-
+        color: #000000;
         min-width: 30px;
-
         background: #b29232;
-
         border-radius: 15px;
-
         padding: 10px 15px 14px 15px;
-
         margin-left: 45px;
       }
 
       div.ans_arrow {
         float: right;
-
         width: 0;
-
         height: 0;
-
         border-left: 10px solid transparent;
-
         border-right: 5px solid transparent;
-
         border-top: 15px solid #b29232;
-
         margin: 0 20px;
       }
 
       div.choices {
         float: left;
-
         width: 100%;
-
         margin: 15px 0 0 0;
       }
 
       div.standard_buttons {
         float: left;
-
         width: 100%;
-
         margin-top: 5px;
-
         border-top: 1px solid #ddd;
-
         padding-top: 12px;
       }
 
       div.credits {
         float: left;
-
         dispaly: none;
-
         width: 100%;
-
-        background: #eee;
-
         margin: 0px 0 15px 0;
+        border-radius: 15px;
+        background-color: #e1f1fe;
+        color: #5c6770;
+      }
+
+      details.in_question {
+        border-style: none;
+        border-radius: 15px;
+        background-color: #e1f1fe;
+        color: black;
+        margin: 10px 15px 14px 15px;
+        padding: 10px 15px 14px 15px;
+        font-size: 0.9em;
+      }
+
+      details > summary.in_question {
+        color: #5c6770;
+      }
+
+      p.result {
+        border-radius: 15px;
+        background-color: white;
+        padding: 10px 15px 14px 15px;
+        font-size: 1.2em;
+        color: black;
+      }
+
+      p.semi_result {
+        border-radius: 15px;
+        background-color: #f2f3f5;
+        padding: 10px 15px 14px 15px;
+        color: #5c6770;
+      }
+
+      div.button_nav {
+        //		color: #5c6770;
       }
 
       div.credit_text {
         font-family: Verdana, Geneva, sans-serif;
-
         font-size: 14px;
-
         line-height: 20px;
-
         padding: 4px 15px 10px 15px;
       }
 
       li.error {
         list-style-type: none;
-
         background: #ffdddd;
-
         margin: 10px 0 0 0;
-
         padding: 5px;
       }
 
       .qpad {
         float: left;
-
         padding: 0 15px;
       }
 
       a.sbutton {
         float: left;
-
         font-family: Verdana, Geneva, sans-serif;
-
         font-size: 14px;
-
         line-height: 20px;
-
         width: 48%;
-
         background: #eee;
-
         border-radius: 8px;
-
         padding: 10px 0px 12px 0;
-
         margin: 0 0 3px 0;
-
         border: solid 1px #888;
-
         text-align: center;
-
         color: #000000;
-
         text-decoration: none;
       }
 
       a.sbutton:hover,
       a.sbutton:active {
         float: left;
-
         font-family: Verdana, Geneva, sans-serif;
-
         font-size: 14px;
-
         line-height: 20px;
-
         width: 48%;
-
         background: #ddd;
-
         border-radius: 8px;
-
         padding: 10px 0px 12px 0;
-
         margin: 0 0 3px 0;
-
         border: solid 1px #888;
-
         text-align: center;
-
         color: #000000;
-
         text-decoration: none;
       }
 
       a.qabutton {
         float: left;
-
         font-family: Verdana, Geneva, sans-serif;
-
         font-size: 14px;
-
         line-height: 20px;
-
         width: 100%;
-
         background: #eee;
-
         border-radius: 8px;
-
         padding: 10px 0px 12px 0;
-
         margin: 0 0 8px 0;
-
         border: solid 1px #888;
-
         text-align: left;
-
         color: #000000;
-
         text-decoration: none;
       }
 
       a.qabutton:hover,
       a.qabutton:active {
         float: left;
-
         font-family: Verdana, Geneva, sans-serif;
-
         font-size: 14px;
-
         line-height: 20px;
-
         width: 100%;
-
         background: #ddd;
-
         border-radius: 8px;
-
         padding: 10px 0px 12px 0;
-
         margin: 0 0 8px 0;
-
         border: solid 1px #888;
-
         text-align: left;
-
         color: #000000;
-
         text-decoration: none;
       }
 
       div.xdiv {
         float: left;
-
         width: 100%;
-
         margin: 0 0 8px 0;
-
         background: #eee;
-
         border: solid 1px #888;
-
         border-radius: 8px;
       }
 
@@ -361,118 +292,55 @@
         box-sizing: border-box; /* Opera/IE 8+ */
 
         float: left;
-
         width: 100%;
-
         font-family: Verdana, Geneva, sans-serif;
-
         font-size: 14px;
-
         line-height: 20px;
-
         background: #fff;
-
         border-top-left-radius: 8px;
-
         border-top-right-radius: 8px;
-
         padding: 10px 10px 12px 10px;
-
         border: solid 0px #888;
-
         border-bottom: solid 1px #888;
-
         text-align: left;
-
         color: #000000;
-
         text-decoration: none;
       }
 
       a.xbutton {
         float: left;
-
         width: 100%;
-
         text-align: left;
-
         font-family: Verdana, Geneva, sans-serif;
-
         font-size: 14px;
-
         line-height: 20px;
-
         background: #eee;
-
         border-radius: 8px;
-
         padding: 10px 0px 12px 0px;
-
         color: #000000;
-
         text-decoration: none;
       }
 
       a.xbutton:hover,
       a.xbutton:active {
         border-top-left-radius: 0px;
-
         border-top-right-radius: 0px;
-
         background: #ddd;
       }
     </style>
+
     <form name="FORM" id="FORM">
       <div
         id="conversation"
         style="margin: 15px auto 0 auto; padding: 0 15px; max-width: 500px"
       >
-        <style>
-          div.credits {
-            border-radius: 15px;
-            background-color: #cfe8fc;
-            color: #5c6770;
-          }
-          details.in_question {
-            border-style: none;
-            border-radius: 15px;
-            background-color: #cfe8fc;
-            color: black;
-            margin: 10px 15px 14px 15px;
-            padding: 10px 15px 14px 15px;
-            font-size: 0.9em;
-          }
-          details > summary.in_question {
-            color: #5c6770;
-          }
-          p.result {
-            border-radius: 15px;
-            background-color: white;
-            padding: 10px 15px 14px 15px;
-            font-size: 1.2em;
-            color: black;
-          }
-          p.semi_result {
-            border-radius: 15px;
-            background-color: #f2f3f5;
-            padding: 10px 15px 14px 15px;
-            color: #5c6770;
-          }
-          div.button_nav {
-            //		color: #5c6770;
-          }
-        </style>
         <div style="text-align: center">
           <h1>Can I expunge my record?</h1>
           <p>
             This tool is only an informational guide. It is not legal advice.
           </p>
           <p style="font-size: 0.7em">Updated August 2023.</p>
-          <p style="font-size: 0.7em">
-            Is your criminal case eligible for expungement in Delaware?
-            Answering these questions can help you find out.
-          </p>
-          <!--	</details> --> <!-- removed for prettier -->
+          <!--	</details> | removed for prettier-->
         </div>
 
         <div id="QandA" class="QandA">
@@ -482,7 +350,7 @@
         </div>
         <div id="Choices" class="choices"></div>
         <div id="rawmarkup" style="display: none">
-          title%3ADelaware+expungement+eligibility%0D%0Aauthor%3A%3Ca+target%3D%22_blank%22+href%3D%22https%3A%2F%2Fods.delaware.gov%2F%22%3EDelaware+Office+of+Defense+Services%3C%2Fa%3E%0D%0Adescription%3AIf+you+are+a+defender+office+interested+in+making+your+own%2C+please+don%27t+hesitate+to+%3Ca+target%3D%22_blank%22+href%3D%22mailto%3A+dawnippolito%40gmail.com%22%3Econnect+with+our+volunteer+programmer%2C+Dawn+I%3C%2Fa%3E%2C+to+help+you+out.%0D%0Abefore%3A%0D%0A%3Cstyle%3E%0D%0A%09div.credits+%7B%0D%0A%09%09border-radius%3A+15px%3B%0D%0A%09%09background-color%3A+%23CFE8FC%3B%0D%0A%09%09color%3A+%235c6770%3B%0D%0A%09%7D%0D%0A%09details.in_question+%7B%0D%0A%09%09border-style%3A+none%3B%0D%0A%09%09border-radius%3A+15px%3B%0D%0A%09%09background-color%3A+%23CFE8FC%3B%0D%0A%09%09color%3A+black%3B%0D%0A%09%09margin%3A+10px+15px+14px+15px%3B%0D%0A%09%09padding%3A+10px+15px+14px+15px%3B%0D%0A%09%09font-size%3A+0.9em%3B%0D%0A%09%7D%0D%0A%09details+%3E+summary.in_question+%7B%0D%0A%09%09color%3A+%235c6770%3B%0D%0A%09%7D%0D%0A%09p.result+%7B%0D%0A%09%09border-radius%3A+15px%3B%0D%0A%09%09background-color%3A+white%3B%0D%0A%09%09padding%3A+10px+15px+14px+15px%3B%0D%0A%09%09font-size%3A+1.2em%3B%0D%0A%09%09color%3A+black%3B%0D%0A%09%7D%0D%0A%09p.semi_result+%7B%0D%0A%09%09border-radius%3A+15px%3B%0D%0A%09%09background-color%3A+%23F2F3F5%3B%0D%0A%09%09padding%3A+10px+15px+14px+15px%3B%0D%0A%09%09color%3A+%235c6770%3B%0D%0A%09%7D%0D%0A%09div.button_nav+%7B%0D%0A%2F%2F%09%09color%3A+%235c6770%3B%0D%0A%09%7D%0D%0A%3C%2Fstyle%3E%0D%0A%3Cdiv+style%3D%22text-align%3Acenter%3B%22%3E%0D%0A%09%3Ch1%3ECan+I+expunge+my+record%3F%3C%2Fh1%3E%0D%0A%09%3Cp%3EThis+tool+is+only+an+informational+guide.+It+is+not+legal+advice.%3C%2Fp%3E%0D%0A%09%3Cp+style%3D%22font-size%3A0.7em%3B%22%3EUpdated+August+2023.%3C%2Fp%3E%0D%0A%09%3Cp+style%3D%22font-size%3A0.7em%3B%22%3EIs+your+criminal+case+eligible+for+expungement+in+Delaware%3F+Answering+these+questions+can+help+you+find+out.%3C%2Fp%3E%0D%0A%09%3C%2Fdetails%3E%0D%0A%3C%2Fdiv%3E%0D%0A%0D%0AQ%28start%29%3A+Were+you+charged+as+an+adult+or+as+a+juvenile%3F%0D%0AA%3A+Adult%0D%0A%09Q%281.1%29%3AGOTO%3Aadult%0D%0AA%3A+Juvenile%0D%0A%09Q%281.2%29%3AGOTO%3Ayouth%0D%0A%0D%0AQ%28youth%29%3A+This+tool+is+for+adult+cases.+For+information+on+juvenile+cases%2C+please+contact+ODS.+GOTO%3Awhat_next%0D%0A%09%0D%0AQ%28adult%29%3A+Do+you+have+any+open+criminal+cases+right+now+or+any+pending+criminal+charges%3F%0D%0AA%3A+Yes%0D%0A%09Q%283.1%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+not+eligible+for+expungement+at+the+moment.%3C%2Fp%3E+You+will+need+to+wait+until+your+cases+are+resolved+before+you+can+seek+expungement.+GOTO%3Aprint_reminder%0D%0AA%3A+No%0D%0A%09Q%283.2%29%3AGOTO%3Acurrent_sentence_check%0D%0A%0D%0AQ%28current_sentence_check%29%3A+Are+you+currently+on+probation%2C+on+parole%2C+or+in+prison%3F%0D%0AA%3A+Yes%0D%0A%09Q%284.1%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+not+eligible+for+expungement+at+the+moment.%3C%2Fp%3E+You+will+need+to+wait+until+your+probation%2C+parole%2C+or+sentence+is+over+before+you+can+seek+expungement.+GOTO%3Aprint_reminder%0D%0AA%3A+No%0D%0A%09Q%284.2%29%3AGOTO%3Ain_favor_check%0D%0A%0D%0AQ%28in_favor_check%29%3A+How+was+the+case+resolved%3F%0D%0AA%3A+I+was+acquitted+of+all+charges.%0D%0A%09Q%285.1%29%3AGOTO%3Ais_in_favor%0D%0AA%3A+All+charges+were+dismissed.%0D%0A%09Q%285.2%29%3AGOTO%3Ais_in_favor%0D%0AA%3A+The+Attorney+General+entered+%3Ci%3Enolle+prosequi%3C%2Fi%3E+%28NP%29+on+all+charges.%0D%0A%09Q%285.3%29%3AGOTO%3Ais_in_favor%0D%0AA%3A+There+was+a+combination+of+the+above+results+that+covered+all+charges+in+the+case.%0D%0A%09Q%285.4%29%3AGOTO%3Ais_in_favor%0D%0AA%3A+I+completed+probation+before+judgment+with+a+successful+discharge.%0D%0A%09Q%285.5%29%3AGOTO%3Ais_in_favor%0D%0AA%3A+I+was+arrested+more+than+a+year+ago%2C+but+I+was+never+charged+in+court+on+this+case.%0D%0A%09Q%285.6%29%3AGOTO%3Ais_in_favor%0D%0AA%3A+I+was+charged+more+than+seven+years+ago%2C+but+my+case+has+not+been+resolved+%28the+disposition+is+unknown%2C+unobtainable%2C+or+pending%29.%0D%0A%09Q%285.7%29%3A+Are+any+of+these+true%3F%0D%0A%09A%3A+There+is+an+active+warrant+in+the+case.%0D%0A%09%09Q%285.7.1%29%3AGOTO%3Amandatory_special_check%0D%0A%09A%3A+There+has+been+documented+activity+on+the+case+within+the+last+twelve+months.%0D%0A%09%09Q%285.7.2%29%3AGOTO%3Amandatory_special_check%0D%0A%09A%3A+Other+charges+in+the+same+case+did+not+end+in+my+favor.%0D%0A%09%09Q%285.7.3%29%3AGOTO%3Amandatory_special_check%0D%0A%09A%3A+I+don%27t+know.%0D%0A%09%09Q%285.7.4%29%3AGOTO%3Ain_favor_unsure%0D%0A%09A%3A+None+of+the+above.%0D%0A%09%09Q%28is_in_favor%29%3A+This+means+that+the+case+was+%22resolved+in+your+favor.%22+GOTO%3Apotential_mandatory%0D%0AA%3A+None+of+the+above.%0D%0A%09Q%285.8%29%3AGOTO%3Amandatory_special_check%0D%0AA%3A+I+don%27t+know.%0D%0A%09Q%28in_favor_unsure%29%3A+It+could+be+a+good+idea+to+find+out.+If+the+case+was+resolved+in+your+favor%2C+it+could+be+eligible+for+mandatory+expungement+now.+Here+are+some+options%3A%0D%0A%09A%3A+I%27ll+try+to+find+out+then+come+back+to+this+chat+later.%0D%0A%09%09Q%285.9.1%29%3A+Okay.+GOTO%3Aprint_reminder%0D%0A%09A%3A+For+now%2C+I+want+to+skip+this+question+and+see+what+might+happen+if+the+case+did+not+terminate+in+my+favor.%0D%0A%09%09Q%285.9.2%29%3A+Okay.+Here+is+the+next+question.+GOTO%3Amandatory_special_check%0D%0A%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fupcoming-events%2F%5D+I+want+to+talk+to+an+attorney+in+person+at+an+expungement+clinic.%0D%0A%09%09Q%285.9.3%29%3AGOTO%3Aclinic%0D%0A%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fexpungements%2F%23contact%5D+I+want+to+email+ODS+to+help+me+figure+out+my+expungement+eligibility.%0D%0A%09%09Q%285.9.4%29%3AGOTO%3Aemail%0D%0A%09%0D%0AQ%28mandatory_special_check%29%3A+Was+the+conviction+one+of+these%3F%0D%0A%09%3Cul%3E%0D%0A%09%09%3Cli%3EPossession+of+a+personal+use+quantity+of+marijuana+%2816+Del.+C.+%C2%A74764%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPossession+of+drug+paraphernalia+%2816+Del.+C.+%C2%A74771%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnderage+possession+or+consumption+of+alcohol+%28904%28e%29+or+%28f%29%29%3C%2Fli%3E%0D%0A%09%3C%2Ful%3E%0D%0AA%3A+Yes%0D%0A%09Q%286.1%29%3AGOTO%3Apotential_mandatory%0D%0AA%3A+No%0D%0A%09Q%286.2%29%3AGOTO%3Aprevious_expungement_check%0D%0A%0D%0AQ%28previous_expungement_check%29%3A+Have+you+expunged+other+charges+or+convictions+before%3F%0D%0AA%3A+Yes%0D%0A%09Q%287.1%29%3A+Was+your+previous+expungement+for+a+felony+conviction%3F%0D%0A%09A%3A+Yes%0D%0A%09%09Q%287.1.1%29%3A+Are+you+now+seeking+to+expunge+another+felony%3F%0D%0A%09%09A%3A+Yes%0D%0A%09%09%09Q%287.1.1.1%29%3A+%3Cp+class%3D%22result%22%3EYour+current+felony+conviction+cannot+be+expunged.%3C%2Fp%3E+Delaware+allows+people+to+expunge+only+one+felony.+GOTO%3Aprint_reminder%0D%0A%09%09A%3A+No%0D%0A%09%09%09Q%287.1.1.2%29%3AGOTO%3Anot_two_felonies%0D%0A%09A%3A+No%0D%0A%09%09Q%28not_two_felonies%29%3A+How+long+ago+was+the+conviction+on+your+previous+expungement%3F%0D%0A%09%09A%3A+Less+than+ten+years+ago%0D%0A%09%09%09Q%287.1.2.1%29%3A+Are+you+currently+seeking+to+expunge+Violations+of+Probation+on+the+same+case+as+the+previous+expungement%3F%0D%0A%09%09%09A%3A+Yes%0D%0A%09%09%09%09Q%287.1.2.1.1%29%3A+Have+3+years+passed+since+those+violations%3F+%3C%21--+Or+should+this+be+since+the+expungement%3F+--%3E%0D%0A%09%09%09%09A%3A+Yes%0D%0A%09%09%09%09%09Q%287.1.2.1.1.1%29%3AGOTO%3Apotential_mandatory%0D%0A%09%09%09%09A%3A+No%0D%0A%09%09%09%09%09Q%287.1.2.1.1.2%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+likely+to+become+eligible+for+mandatory+expungement+after+the+3-year+waiting+period.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0A%09%09%09A%3A+No%0D%0A%09%09%09%09Q%287.1.2.1.2%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+not+eligible+for+expungement+at+the+moment.%3C%2Fp%3E+You+will+need+to+wait+until+10+years+after+the+previously+expunged+conviction+before+you+can+seek+this+expungement.+GOTO%3Aprint_reminder%0D%0A%09%09A%3A+More+than+ten+years+ago%0D%0A%09%09%09Q%287.1.2.2%29%3AGOTO%3Amotor_vehicle_check%0D%0AA%3A+No%0D%0A%09Q%287.2%29%3AGOTO%3Amotor_vehicle_check%0D%0A%0D%0AQ%28motor_vehicle_check%29%3A+Was+the+conviction+related+to+traffic%2C+DUI%2C+or+driving%3F%0D%0AA%3A+Yes%0D%0A%09Q%288.1%29%3A+Was+the+conviction+one+of+these%3F%0D%0A%09%09%09%09%09%3Cul%3E%0D%0A%09%09%09%09%09%09%3Cli%3EDriving+After+Judgment+Prohibited%3C%2Fli%3E%0D%0A%09%09%09%09%09%09%3Cli%3EReckless+Driving%3C%2Fli%3E%0D%0A%09%09%09%09%09%09%3Cli%3EOperation+of+a+Moving+Vehicle+Causing+Death%3C%2Fli%3E%0D%0A%09%09%09%09%09%3C%2Ful%3E%0D%0A%09A%3A+Yes%2C+it+is+one+of+those.%0D%0A%09%09Q%288.1.1%29%3AGOTO%3Afee_check%0D%0A%09A%3A+No%2C+it+is+none+of+those.%0D%0A%09%09Q%288.1.2%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+not+eligible+for+expungement.%3C%2Fp%3E+It+is+one+of+the+%22Title+21+offenses%22+that+Delaware+does+not+allow+people+to+expunge.+GOTO%3Aprint_reminder%0D%0AA%3A+No%0D%0A%09Q%288.2%29%3AGOTO%3Afee_check%0D%0A%0D%0AQ%28fee_check%29%3A+To+expunge+a+case%2C+all+monetary+obligations+must+be+paid%2C+waived%2C+or+converted+to+a+civil+judgment.%3Cbr%3E+%3Cbr%3EDo+you+still+owe+fines%2C+fees%2C+or+restitution+on+the+case%3F%0D%0AA%3A+I+never+had+any.%0D%0A%09Q%289.1%29%3AGOTO%3Apardon_only_check%0D%0AA%3A+I+paid+them+all.%0D%0A%09Q%289.2%29%3AGOTO%3Apardon_only_check%0D%0AA%3A+I+am+trying+to+pay.%0D%0A%09Q%289.3%29%3A+When+you+apply+for+expungement%2C+you+may+ask+the+court+to+waive+the+unpaid+obligations+or+convert+them+to+a+civil+judgement.+If+the+court+does+not+grant+this+request%2C+you+will+need+to+pay+all+fines%2C+fees%2C+and+restitution+before+you+can+seek+expungement.+GOTO%3Apardon_only_check%0D%0AA%3A+I+already+got+the+unpaid+obligations+waived+or+converted+to+a+civil+judgment.%0D%0A%09Q%289.4%29%3AGOTO%3Apardon_only_check%0D%0AA%3A+I+don%27t+know.%0D%0A%09Q%289.5%29%3A+It+could+be+a+good+idea+to+find+out.+An+ODS+attorney+can+help+you+figure+out+if+you+owe+money+on+the+case.+And+even+if+you+still+owe+money%2C+you+might+be+able+to+move+forward+by+paying+or+petitioning+the+court.+Here+are+some+options%3A%0D%0A%09A%3A+I%27ll+try+to+find+out+on+my+own+then+come+back+to+this+chat+later.%0D%0A%09%09Q%289.5.1%29%3A+Okay.+GOTO%3Aprint_reminder%0D%0A%09A%3A+For+now%2C+I+want+to+skip+this+question+and+see+what+might+happen+if+I+don%27t+owe+money+on+the+case.%0D%0A%09%09Q%289.5.2%29%3A+Okay.+Here+is+the+next+question.+GOTO%3Apardon_only_check%0D%0A%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fupcoming-events%2F%5D+I+want+to+talk+to+an+attorney+in+person+at+an+expungement+clinic.%0D%0A%09%09Q%289.5.3%29%3AGOTO%3Aclinic%0D%0A%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fexpungements%2F%23contact%5D+I+want+to+email+ODS+to+help+me+figure+out+my+expungement+eligibility.%0D%0A%09%09Q%289.5.4%29%3AGOTO%3Aemail%0D%0A%0D%0AQ%28pardon_only_check%29%3A+Under+Delaware+law%2C+some+cases+are+ineligible+for+expungement.+Let%27s+check+for+those.%3Cbr%3E+%3Cbr%3EWas+the+conviction+one+of+these%3F%0D%0A%09%3Cul%3E%0D%0A%09%09%3Cli%3EManslaughter%3C%2Fli%3E%0D%0A%09%09%3Cli%3EMurder+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3EMurder+1st+Degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3ERape+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3ERape+1st+Degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3ESexual+Assault+of+a+Child+by+a+Person+in+Position+of+Trust+1st+Degree%3C%2Fli%3E%0D%0A%09%3C%2Ful%3E%0D%0AA%3A+Yes%0D%0A%09Q%2810.1%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+not+eligible+for+expungement.%3C%2Fp%3E+It+is+one+of+the+offenses+that+Delaware+does+not+allow+people+to+expunge.+You+might+want+to+consider+pursuing+a+pardon.+GOTO%3Apotential_pardon%0D%0AA%3A+No%0D%0A%09Q%2810.2%29%3AGOTO%3Avictim_check%0D%0A%0D%0AQ%28victim_check%29%3A+Cases+with+specific+victims+are+not+allowed+to+be+expunged.+Let%27s+check+for+those.%3Cbr%3E+%3Cbr%3EWas+the+victim+a+child%3F%0D%0AA%3A+Yes%0D%0A%09Q%2811.1%29%3AGOTO%3Aexcluded_by_victim%0D%0AA%3A+No%0D%0A%09Q%2811.2%29%3A+Was+the+victim+over+age+62%3F%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2811.2.1%29%3AGOTO%3Aexcluded_by_victim%0D%0A%09A%3A+No%0D%0A%09%09Q%2811.2.2%29%3A+Was+the+victim+a+vulnerable+adult%3F%0D%0A%09%09%09%3Cdetails+class%3D%22in_question%22%3E%0D%0A%09%09%09%09%3Csummary+class%3D%22in_question%22%3EDefine+%22vulnerable+adult%22%3C%2Fsummary%3E%0D%0A%09%09%09%09%3Cp%3EA+%22vulnerable+adult%22+is+a+person+18+years+of+age+or+older+who%2C+by+reason+of+isolation%2C+sickness%2C+debilitation%2C+mental+illness+or+physical%2C+mental+or+cognitive+disability%2C+is+easily+susceptible+to+abuse%2C+neglect%2C+mistreatment%2C+intimidation%2C+manipulation%2C+coercion+or+exploitation.+It+includes+any+adult+for+whom+a+guardian+has+been+appointed.%3C%2Fp%3E%0D%0A%09%09%09%3C%2Fdetails%3E%0D%0A%09%09A%3A+Yes%0D%0A%09%09%09Q%28excluded_by_victim%29%3A+%3Cp+class%3D%22semi_result%22%3EBecause+of+who+the+victim+was%2C+this+case+is+not+eligible+for+mandatory+expungement.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement.+Let%27s+find+out.+GOTO%3Adiscretionary_felony_check_exclusion_yes%0D%0A%09%09A%3A+No%0D%0A%09%09%09Q%2811.2.2.2%29%3AGOTO%3Avictim_relationship_check%0D%0A%0D%0AQ%28victim_relationship_check%29%3A+Some+cases+that+are+categorized+as+domestic+violence+are+not+allowed+to+be+expunged.+Let%27s+check+for+those.%3Cbr%3E+%3Cbr%3E+Was+your+relationship+to+the+victim+one+of+these%3F%0D%0A%09%3Cul%3E%0D%0A%09%09%3Cli%3ESpouse%3C%2Fli%3E%0D%0A%09%09%3Cli%3EFormer+spouse%3C%2Fli%3E%0D%0A%09%09%3Cli%3ECaregiver+and+child%3C%2Fli%3E%0D%0A%09%09%3Cli%3EA+couple+living+together+with+a+child%3C%2Fli%3E%0D%0A%09%09%3Cli%3EAny+group+of+persons+related+by+blood+or+marriage+who+are+living+together%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPeople+who+cohabited+at+the+time+of+or+within+three+years+before+the+offense%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPeople+with+a+child+in+common+%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPeople+with+a+serious+dating+relationship+at+the+time+of+or+within+three+years+before+the+offense%3C%2Fli%3E%0D%0A%09%3C%2Ful%3E%0D%0AA%3A+Yes%0D%0A%09Q%2812.1%29%3A+Was+the+conviction+one+of+these%3F%0D%0A%09%09%3Cul%3E%0D%0A%09%09%09%3Cli%3EOffensive+Touching%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EMenacing%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EReckless+Endangerment+in+the+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EAssault+in+the+3rd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EAbuse+of+a+Sports+Official%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ETerroristic+Threatening%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EUnlawfully+Administering+Drugs%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EVehicular+Assault+in+the+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EUnlawful+Imprisonment+in+the+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EInterference+with+Custody%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECoercion%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EReckless+Burning+or+Exploding%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECriminal+Mischief%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECriminal+Trespass+in+the+3rd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECriminal+Trespass+in+the+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECriminal+Trespass+in+the+1st+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EHarassment%3C%2Fli%3E%0D%0A%09%09%3C%2Ful%3E%0D%0A%09A%3A+Yes%0D%0A%09%09Q%28excluded_by_victim_relationship%29%3A+%3Cp+class%3D%22semi_result%22%3EBecause+of+your+relationship+to+the+victim+and+the+type+of+offense%2C+this+case+is+not+eligible+for+mandatory+expungement.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement.+Let%27s+find+out.+GOTO%3Adiscretionary_felony_check_exclusion_yes%0D%0A%09A%3A+No%0D%0A%09%09Q%2812.1.2%29%3A+GOTO%3Amandatory_excluded_offense_check%0D%0A%09A%3A+I+don%27t+know%0D%0A%09%09Q%2812.1.3%29%3A+It+could+be+a+good+idea+to+find+out.+If+the+case+is+one+of+the+above+types+of+domestic+violence%2C+then+the+case+would+not+be+eligible+for+mandatory+expungement%2C+but+it+could+still+be+eligible+for+discretionary+expungement.+Here+are+some+options%3A%0D%0A%09%09A%3A+I%27ll+try+to+find+out+then+come+back+to+this+chat+later.%0D%0A%09%09%09Q%2812.1.3.1%29%3A+Okay.+GOTO%3Aprint_reminder%0D%0A%09%09A%3A+For+now%2C+I+want+to+skip+this+question+and+see+what+might+happen+if+the+case+is+not+excluded+for+domestic+violence.%0D%0A%09%09%09Q%2812.1.3.2%29%3A+Okay.+Here+is+the+next+question.+GOTO%3Amandatory_excluded_offense_check%0D%0A%09%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fupcoming-events%2F%5D+I+want+to+talk+to+an+attorney+in+person+at+an+expungement+clinic.%0D%0A%09%09%09Q%2812.1.3.3%29%3AGOTO%3Aclinic%0D%0A%09%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fexpungements%2F%23contact%5D+I+want+to+email+ODS+to+help+me+figure+out+my+expungement+eligibility.%0D%0A%09%09%09Q%2812.1.3.4%29%3AGOTO%3Aemail%0D%0AA%3A+No%0D%0A%09Q%2812.2%29%3AGOTO%3Amandatory_excluded_offense_check%0D%0A%0D%0AQ%28mandatory_excluded_offense_check%29%3A+Some+types+of+convictions+are+not+allowed+to+be+expunged.+Let%27s+check+for+those.%3Cbr%3E+%3Cbr%3EWas+the+conviction+one+of+these%3F%0D%0A%09%3Cul%3E%0D%0A%09%09%3Cli%3EUnlawfully+administering+drugs+when+charged+in+conjunction+with+a+sexual+offense+as+defined+in+%C2%A7+761%28f%29.%3C%2Fli%3E%0D%0A%09%09%3Cli%3ESexual+harassment%3C%2Fli%3E%0D%0A%09%09%3Cli%3EIndecent+exposure+in+the+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3EIndecent+exposure+in+the+1st+Degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3ETrespassing+with+intent+to+peer+or+peep%3C%2Fli%3E%0D%0A%09%09%3Cli%3EOrganized+retail+crime%3C%2Fli%3E%0D%0A%09%09%3Cli%3EHome+improvement+fraud%3C%2Fli%3E%0D%0A%09%09%3Cli%3ENew+home+construction+fraud%3C%2Fli%3E%0D%0A%09%09%3Cli%3EOffenses+against+law-enforcement+animals%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPromoting+prison+contraband%3C%2Fli%3E%0D%0A%09%09%3Cli%3EResisting+arrest%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUse+of+an+animal+to+avoid+capture%3C%2Fli%3E%0D%0A%09%09%3Cli%3EHate+crime%3C%2Fli%3E%0D%0A%09%09%3Cli%3EMalicious+interference+with+emergency+communication%3C%2Fli%3E%0D%0A%09%09%3Cli%3EAbusing+a+corpse%3C%2Fli%3E%0D%0A%09%09%3Cli%3EViolation+of+privacy%3C%2Fli%3E%0D%0A%09%09%3Cli%3ELewdness%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPatronizing+a+prostitute%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPermitting+prostitution%3C%2Fli%3E%0D%0A%09%09%3Cli%3ECarrying+a+concealed+dangerous+instrument%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnlawfully+dealing+with+a+dangerous+weapon%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnlawfully+permitting+a+minor+access+to+a+firearm%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPossession+of+a+weapon+in+a+Safe+School%2FRecreation+Zone%3C%2Fli%3E%0D%0A%09%09%3Cli%3EVehicular+assault+in+the+second+degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3EIncest%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnlawful+sexual+contact+in+the+third+degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3ECoercion+%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnlawfully+dealing+with+a+child%3C%2Fli%3E%0D%0A%09%3C%2Ful%3E%0D%0AA%3A+Yes%0D%0A%09Q%2813.1%29%3AGOTO%3Aexcluded_by_offense%0D%0AA%3A+No%0D%0A%09Q%2813.2%29%3A+Was+the+conviction+one+of+these%3F%0D%0A%09%09%3Cul%3E%0D%0A%09%09%09%3Cli%3EGiving+unlawful+gratuities%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EReceiving+unlawful+gratuities%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EImproper+influence%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EOfficial+misconduct%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EPerjury+in+the+3rd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EMaking+a+false+written+statement%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ETampering+with+a+juror%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EMisconduct+by+a+juror%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECriminal+contempt%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECriminal+contempt+of+a+domestic+violence+protective+order+or+lethal+violence+protective+order%3C%2Fli%3E%0D%0A%09%09%3C%2Ful%3E%0D%0A%09A%3A+Yes%0D%0A%09%09Q%28excluded_by_offense%29%3A+%3Cp+class%3D%22semi_result%22%3EBecause+of+the+type+of+offense%2C+this+case+is+not+eligible+for+mandatory+expungement.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement.+Let%27s+find+out.+GOTO%3Adiscretionary_felony_check_exclusion_yes%0D%0A%09A%3A+No%0D%0A%09%09Q%2813.2.2%29%3AGOTO%3Amandatory_charge_waiting_period_check%0D%0A%0D%0AQ%28mandatory_charge_waiting_period_check%29%3A+Different+charges+have+different+waiting+periods+for+mandatory+expungement.+Let%27s+look+into+those.%3Cbr%3E+%3Cbr%3EWas+the+conviction+for+Class+G+felony+drug+possession+%2816+Del.+C.+%C2%A74756%29%3F%0D%0AA%3A+Yes%0D%0A%09Q%2814.1%29%3A+Have+5+years+passed+since+the+discharge+date+or+conviction+date%2C+whichever+is+later%3F%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2814.1.1%29%3AGOTO%3Apotential_mandatory%0D%0A%09A%3A+No%0D%0A%09%09Q%2814.1.2%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+likely+to+become+eligible+for+mandatory+expungement+after+the+5-year+waiting+period.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement+sooner.+Let%27s+find+out.+GOTO%3Adiscretionary_excluded_offense_check%0D%0AA%3A+No%0D%0A%09Q%2814.2%29%3A+Was+the+conviction+for+one+of+these%3F%0D%0A%09%09%3Cul%3E%0D%0A%09%09%09%3Cli%3EMiscellaneous+drug+crimes+%2816+Del.+C.+%C2%A74757%29%0D%0A%09%09%09%09%3Cul%3E%0D%0A%09%09%09%09%09%3Cli%3EDistributing+a+controlled+substance+under+Schedule+I+or+II%3C%2Fli%3E%0D%0A%09%09%09%09%09%3Cli%3EUse+in+the+course+of+manufacture%2C+distribution%2C+prescribing%2C+dispensing%2C+pr+research+of+a+controlled+substance+or+to+obtain+a+controlled+substance+with+a+fictitious%2C+revoked%2C+or+suspended+registration%3C%2Fli%3E%0D%0A%09%09%09%09%09%3Cli%3EAcquiring+a+controlled+substance%2Fprescription+by+fraud%2C+deception%2C+etc.%3C%2Fli%3E%0D%0A%09%09%09%09%09%3Cli%3EFurnishing+false+or+fraudulent+information+or+omitting+information+with+respect+to+a+controlled+substance%3C%2Fli%3E%0D%0A%09%09%09%09%09%3Cli%3EObtaining+a+controlled+substance+by+theft%3C%2Fli%3E%0D%0A%09%09%09%09%09%3Cli%3EPrescribing+or+administering+anabolic+steroids+as+a+performance+enhancement%3C%2Fli%3E%0D%0A%09%09%09%09%3C%2Ful%3E%0D%0A%09%09%09%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EDealing+in+counterfeit+and+controlled+substances+%2816+Del.+C.+%C2%A74758%29%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EMaintaining+a+drug+property+%2816+Del.+C.+%C2%A74760%29%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EPossession+of+burglar%E2%80%99s+tools+or+instruments+%2811+Del.+C.+%C2%A7828%29%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EForgery+2nd+degree+%2811+Del.+C.+%C2%A7861%29%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EUnlawful+use+of+a+payment+card+%2811+Del.+C.+%C2%A7903%29%3C%2Fli%3E%0D%0A%09%09%3C%2Ful%3E%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2814.2.1%29%3A+Have+10+years+passed+since+the+discharge+date+or+conviction+date%2C+whichever+is+later%3F%0D%0A%09%09%09%3Cdetails+class%3D%22in_question%22%3E%0D%0A%09%09%09%09%3Csummary+class%3D%22in_question%22%3EDefine+%22discharge+date%22%3C%2Fsummary%3E%0D%0A%09%09%09%09%3Cp%3EThe+%22discharge+date%22+is+the+date+you+were+released+from+incarceration%2C+probation%2C+or+parole%2C+whichever+is+later.%3C%2Fp%3E+%3C%21--+Or+is+it+just+released+from+incarceration%3F+--%3E%0D%0A%09%09%09%3C%2Fdetails%3E%09%09%0D%0A%09%09A%3A+Yes%0D%0A%09%09%09Q%2814.2.1.1%29%3AGOTO%3Apotential_mandatory%0D%0A%09%09A%3A+No%0D%0A%09%09%09Q%2814.2.1.2%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+likely+to+become+eligible+for+mandatory+expungement+after+the+10-year+waiting+period.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement+sooner.+Let%27s+find+out.+GOTO%3Adiscretionary_felony_check_exclusion_no%0D%0A%09A%3A+No%0D%0A%09%09Q%2814.2.2%29%3AGOTO%3Amandatory_felony_check%0D%0A%0D%0AQ%28mandatory_felony_check%29%3A+The+number+of+felonies+on+your+record+can+affect+your+eligibility.+Let%27s+look+into+those.%3Cbr%3E+%3Cbr%3EHow+many+felony+convictions+do+you+have%3F%0D%0AA%3A+More+than+one+felony%0D%0A%09Q%2815.1%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+likely+not+eligible+for+expungement+because+your+record+has+more+than+one+felony.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0AA%3A+One+felony%0D%0A%09Q%2815.2%29%3A+%3Cp+class%3D%22semi_result%22%3EThis+case+is+not+eligible+for+mandatory+expungement+because+it+contains+a+felony+%28and+that+felony+is+not+Class+G+felony+drug+possession%29.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement.+Let%27s+find+out.+GOTO%3Adiscretionary_excluded_offense_check%0D%0AA%3A+No+felonies%0D%0A%09Q%2815.3%29%3AGOTO%3Amandatory_waiting_period_check%0D%0A%0D%0AQ%28mandatory_waiting_period_check%29%3A+The+types+of+convictions+on+your+record+can+affect+your+eligibility.+So+can+the+amount+of+time+that+has+passed.+Let%27s+look+into+those.%3Cbr%3E+%3Cbr%3EWhat+conviction+levels+are+in+this+case%3F%0D%0AA%3A+Violations+only%0D%0A%09Q%2816.1%29%3A+Do+you+have+convictions+from+any+other+cases%3F%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2816.1.1%29%3A+Were+the+other+convictions+one+or+a+combination+of+these%3F%0D%0A%09%09%09%3Cul%3E%0D%0A%09%09%09%09%3Cli%3EUnderage+Possession+of+Alcohol+%284+Del.+C.+%C2%A7+904%28e%29%29%3C%2Fli%3E%0D%0A%09%09%09%09%3Cli%3EUnderage+Possession+of+Personal+Use+Quantity+of+Marijuana+%2816+Del.+C.+%C2%A7+4764%28c%29%29%3C%2Fli%3E%0D%0A%09%09%09%09%3Cli%3EMotor+Vehicle+Offense+%28Title+21%29%3C%2Fli%3E%0D%0A%09%09%09%3C%2Ful%3E%0D%0A%09%09A%3A+Yes%2C+all+the+other+convictions+were+one+or+a+combination+of+those.%0D%0A%09%09%09Q%2816.1.1.1%29%3A+The+other+convictions+could+be+eligible+for+mandatory+expungement+right+now.+But+your+situation+is+complex.+You+can+get+in+touch+with+ODS+to+help+you+understand+your+eligibility+and+your+options.+%3C%21--+What%27s+their+move+here%3A+Continue+to+find+out+if+you+can+expunge+all+at+once%3F+Apply+to+expunge+the+other+ones+first%3F+%28Would+they+then+have+to+wait+ten+years+to+expunge+this+one%2C+or+no%3F%29+--%3E+GOTO%3Aprint_reminder%0D%0A%09%09A%3A+No%2C+at+least+one+other+conviction+is+something+other+than+those.%0D%0A%09%09%09Q%2816.1.1.2%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+not+eligible+for+expungement.%3C%2Fp%3E+Delaware+doesn%E2%80%99t+allow+the+types+of+convictions+on+your+record+to+be+expunged.+%3C%21--+explanation+--%3E+GOTO%3Aprint_reminder%0D%0A%09A%3A+No%0D%0A%09%09Q%2816.1.2%29%3A+Have+3+years+passed+since+the+conviction%3F%0D%0A%09%09A%3A+Yes%0D%0A%09%09%09Q%2816.1.2.1%29%3AGOTO%3Apotential_mandatory%0D%0A%09%09A%3A+No%0D%0A%09%09%09Q%2816.1.2.2%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+likely+to+become+eligible+for+mandatory+expungement+after+the+3-year+waiting+period.%3C%2Fp%3E+%3Cp+class%3D%22result%22%3EAlso%2C+this+case+is+likely+to+become+eligible+for+discretionary+expungement+after+the+3-year+waiting+period.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0AA%3A+Misdemeanors+only%0D%0A%09Q%2816.2%29%3AGOTO%3Amisdemeanors_and_under%0D%0AA%3A+Misdemeanors+and+violations%0D%0A%09Q%28misdemeanors_and_under%29%3A+Do+you+have+convictions+from+any+other+cases%3F%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2816.3.1%29%3A+Were+the+other+convictions+one+or+a+combination+of+these%3F%0D%0A%09%09%09%3Cul%3E%0D%0A%09%09%09%09%3Cli%3EUnderage+Possession+of+Alcohol+%284+Del.+C.+%C2%A7+904%28e%29%29%3C%2Fli%3E%0D%0A%09%09%09%09%3Cli%3EUnderage+Possession+of+Personal+Use+Quantity+of+Marijuana+%2816+Del.+C.+%C2%A7+4764%28c%29%29%3C%2Fli%3E%0D%0A%09%09%09%09%3Cli%3EMotor+Vehicle+Offense+%28Title+21%29%3C%2Fli%3E%0D%0A%09%09%09%3C%2Ful%3E%0D%0A%09%09A%3A+Yes%2C+all+the+other+convictions+were+one+or+a+combination+of+those.%0D%0A%09%09%09Q%2816.3.1.1%29%3A+These+other+convictions+could+be+eligible+for+mandatory+expungement+right+now.+But+your+situation+is+complex.+You+can+get+in+touch+with+ODS+to+help+you+understand+your+eligibility+and+your+options.+%3C%21--+What%27s+their+move+here%3A+Continue+to+find+out+if+you+can+expunge+all+at+once%3F+Apply+to+expunge+the+other+ones+first%3F+%28Would+they+then+have+to+wait+ten+years+to+expunge+this+one%2C+or+no%3F%29+--%3E+GOTO%3Aprint_reminder%0D%0A%09%09A%3A+No%2C+at+least+one+other+conviction+is+something+other+than+those.%0D%0A%09%09%09Q%2816.3.1.2%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+not+eligible+for+expungement.%3C%2Fp%3E+Delaware+doesn%E2%80%99t+allow+the+types+of+convictions+on+your+record+to+be+expunged.+%3C%21--+explanation+--%3E+GOTO%3Aprint_reminder%0D%0A%09A%3A+No%0D%0A%09%09Q%2816.3.2%29%3A+Have+5+years+passed+since+the+conviction%3F%0D%0A%09%09A%3A+Yes%0D%0A%09%09%09Q%2816.3.2.1%29%3AGOTO%3Apotential_mandatory%0D%0A%09%09A%3A+No%0D%0A%09%09%09Q%2816.3.2.2%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+likely+to+become+eligible+for+mandatory+expungement+after+the+5-year+waiting+period.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement+sooner.+Let%27s+find+out.+GOTO%3Adiscretionary_3_year_wait_check%0D%0A%0D%0AQ%28discretionary_felony_check_exclusion_yes%29%3A+The+number+of+felonies+on+your+record+can+affect+your+eligibility.+Let%27s+look+into+those.%3Cbr%3E+%3Cbr%3EHow+many+felony+convictions+do+you+have%3F%0D%0AA%3A+More+than+one+felony%0D%0A%09Q%2817.1%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+likely+not+eligible+for+discretionary+expungement+because+your+record+has+more+than+one+felony.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0AA%3A+One+felony%0D%0A%09Q%2817.2%29%3AGOTO%3Adiscretionary_excluded_offense_check%0D%0AA%3A+No+felonies%0D%0A%09Q%2817.3%29%3AGOTO%3Adiscretionary_excluded_offense_check%0D%0A%0D%0AQ%28discretionary_felony_check_exclusion_no%29%3A+The+number+of+felonies+on+your+record+can+affect+your+eligibility.+Let%27s+look+into+those.%3Cbr%3E+%3Cbr%3EHow+many+felony+convictions+do+you+have%3F%0D%0AA%3A+More+than+one+felony%0D%0A%09Q%2818.1%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+likely+not+eligible+for+discretionary+expungement+because+your+record+has+more+than+one+felony.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0AA%3A+One+felony%0D%0A%09Q%2818.2%29%3AGOTO%3Adiscretionary_excluded_offense_check%0D%0AA%3A+No+felonies%0D%0A%09Q%2818.3%29%3AGOTO%3Adiscretionary_waiting_period_3_check%0D%0A%0D%0AQ%28discretionary_excluded_offense_check%29%3A+Some+types+of+convictions+require+a+pardon+before+they+can+be+eligible+for+expungement.+Let%27s+check+for+those.%3Cbr%3E+%3Cbr%3EWas+the+conviction+one+of+these%3F%0D%0A%09%3Cul%3E%0D%0A%09%09%3Cli%3EViolent+Felony+%2811+Del.+C.+4201%28c%29%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EInfirm%2FVulnerable+Persons+%2816+Del.+C.+%C2%A7+1136+or+31+Del.+C.+%C2%A7+3913%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EFelony+conviction+involving+physical+or+sexual+assault+crimes+%2831+Del.+C.+%C2%A7+309%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EVehicular+Assault+2nd+Degree+%2811+Del.+C.+%C2%A7+628%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EIncest+%2811+Del.+C.%C2%A7+766%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnlawful+Sexual+Contact+%2811+Del.+C.+%C2%A7+767%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3ECoercion+%2811+Del.+C.+%C2%A7+791%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnlawful+Dealing+With+a+Child+%2811+Del.+C.+%C2%A7+1106%29%3C%2Fli%3E%0D%0A%09%3C%2Ful%3E%0D%0AA%3A+Yes%0D%0A%09Q%2819.1%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+not+eligible+for+discretionary+expungement+right+now.%3C%2Fp%3E+You+might+want+to+consider+pursuing+a+pardon.+If+you+can+get+an+unconditional+pardon+for+this+case%2C+it+might+then+become+eligible+for+discretionary+expungement.+GOTO%3Apotential_pardon%0D%0AA%3A+No%0D%0A%09Q%2819.2%29%3AGOTO%3Adiscretionary_waiting_period_7_check%0D%0AA%3A+I+don%27t+know%0D%0A%09Q%2819.3%29%3A+It+could+be+a+good+idea+to+find+out.+If+you+have+one+of+these+convictions%2C+you+wouldn%27t+be+eligible+for+expungement+right+now%2C+but+you+could+become+eligible+if+you+can+obtain+a+pardon.+Here+are+some+options%3A%0D%0A%09A%3A+I%27ll+try+to+find+out+then+come+back+to+this+chat+later.%0D%0A%09%09Q%2819.3.1%29%3A+Okay.+GOTO%3Aprint_reminder%0D%0A%09A%3A+For+now%2C+I+want+to+skip+this+question+and+see+what+might+happen+if+I+don%27t+have+one+of+these+convictions.%0D%0A%09%09Q%2819.3.2%29%3A+Okay.+Here+is+the+next+question.+GOTO%3Adiscretionary_waiting_period_7_check%0D%0A%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fupcoming-events%2F%5D+I+want+to+talk+to+an+attorney+in+person+at+an+expungement+clinic.%0D%0A%09%09Q%2819.3.3%29%3AGOTO%3Aclinic%0D%0A%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fexpungements%2F%23contact%5D+I+want+to+email+ODS+to+help+me+figure+out+my+expungement+eligibility.%0D%0A%09%09Q%2819.3.4%29%3AGOTO%3Aemail%0D%0A%0D%0AQ%28discretionary_waiting_period_7_check%29%3A+Do+you+have+convictions+from+any+other+cases%3F%0D%0AA%3A+Yes%0D%0A%09Q%2820.1%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+not+eligible+for+discretionary+expungement.%3C%2Fp%3E+%3C%21--+explanation+--%3E+GOTO%3Aprint_reminder%0D%0AA%3A+No%0D%0A%09Q%2820.2%29%3A+Have+7+years+passed+since+the+discharge+date+or+conviction+date%2C+whichever+is+later%3F%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2820.2.1%29%3AGOTO%3Apotential_discretionary%0D%0A%09A%3A+No%0D%0A%09%09Q%2820.2.2%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+likely+to+become+eligible+for+mandatory+expungement+after+the+7-year+waiting+period.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0A%0D%0AQ%28discretionary_waiting_period_3_check%29%3A+Do+you+have+convictions+from+any+other+cases%3F%0D%0AA%3A+Yes%0D%0A%09Q%2821.1%29%3A+%3Cp+class%3D%22result%22%3EYour+criminal+record+is+not+eligible+for+discretionary+expungement.%3C%2Fp%3E+%3C%21--+explanation+--%3E+GOTO%3Aprint_reminder%0D%0AA%3A+No%0D%0A%09Q%28discretionary_3_year_wait_check%29%3A+Have+3+years+passed+since+the+discharge+date+or+conviction+date%2C+whichever+is+later%3F+%3C%21--+Are+all+references+to+conviction+%28versus+the+later+of+discharge+or+conviction%29+date+correct%3F+--%3E%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2821.2.1%29%3AGOTO%3Apotential_discretionary%0D%0A%09A%3A+No%0D%0A%09%09Q%2821.2.2%29%3A+%3Cp+class%3D%22result%22%3EThis+case+is+likely+to+become+eligible+for+mandatory+expungement+after+the+3-year+waiting+period.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0A%0D%0AQ%28potential_pardon%29%3A+The+Delaware+Department+of+Labor%27s+%3Ca+target%3D%22_blank%22+href%3D%22https%3A%2F%2Flabor.delaware.gov%2Fapex%2F%22%3EAPEX+Program%3C%2Fa%3E+helps+people+through+the+pardon+process.+GOTO%3Aprint_reminder%0D%0A%0D%0AQ%28potential_mandatory%29%3A+%3Cp+class%3D%22result%22%3EYour+criminal+record+could+be+eligible+for+mandatory+expungement+now.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0A%0D%0AQ%28potential_discretionary%29%3A+%3Cp+class%3D%22result%22%3EYour+criminal+record+could+be+eligible+for+discretionary+expungement+now.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0A%0D%0AQ%28print_reminder%29%3A+Before+you+close+this+tab%2C+%3Cb%3Eremember+to+print+this+page%3C%2Fb%3E+if+you+want+to+keep+a+copy.+GOTO%3Awhat_next%0D%0A%0D%0AQ%28what_next%29%3A+What+would+you+like+to+do+next%3F%0D%0AA%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fupcoming-events%2F%5D+%3Cdiv+class%3D%22button_nav%22%3ETalk+to+an+attorney+in+person+at+an+expungement+clinic.%3C%2Fdiv%3E%0D%0A%09Q%28clinic%29%3A+The+calendar+opened+in+another+tab.%0D%0AA%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fexpungements%2F%23contact%5D+%3Cdiv+class%3D%22button_nav%22%3EEmail+ODS+to+help+me+figure+out+my+expungement+eligibility.%3C%2Fdiv%3E%0D%0A%09Q%28email%29%3A+The+contact+form+opened+in+another+tab.%0D%0AA%3A+Call+ODS+on+the+phone+to+discuss+my+expungement+eligibility.%0D%0A%09Q%28phone%29%3A+The+phone+number+is+302-577-5217.%0D%0AA%3A%5Bhttps%3A%2F%2Flabor.delaware.gov%2Fapex%2F%5D+%3Cdiv+class%3D%22button_nav%22%3ELearn+about+pardons.%3C%2Fdiv%3E%0D%0A%09Q%2826.4%29%3A+The+link+opened+in+another+tab.%0D%0AA%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2F%5D+%3Cdiv+class%3D%22button_nav%22%3EGo+to+the+Delaware+Office+of+Defense+Services+website.%3C%2Fdiv%3E%0D%0A%09Q%2826.5%29%3A+The+link+opened+in+another+tab.
+          title%3AExpungement+Eligibility+in+Delaware%0D%0Aauthor%3A+%3Ca+target%3D%22_blank%22+href%3D%22https%3A%2F%2Fods.delaware.gov%2F%22%3EDelaware+Office+of+Defense+Services%3C%2Fa%3E%0D%0Adescription%3AFind+out+if+your+Delaware+criminal+record+can+be+expunged.%0D%0Abefore%3A%0D%0A%3Cstyle%3E%0D%0A%09div.credits+%7B%0D%0A%09%09border-radius%3A+15px%3B%0D%0A%09%09background-color%3A+%23E1F1FE%3B%0D%0A%09%09color%3A+%235c6770%3B%0D%0A%09%7D%0D%0A%09details.in_question+%7B%0D%0A%09%09border-style%3A+none%3B%0D%0A%09%09border-radius%3A+15px%3B%0D%0A%09%09background-color%3A+%23E1F1FE%3B%0D%0A%09%09color%3A+black%3B%0D%0A%09%09margin%3A+10px+15px+14px+15px%3B%0D%0A%09%09padding%3A+10px+15px+14px+15px%3B%0D%0A%09%09font-size%3A+0.9em%3B%0D%0A%09%7D%0D%0A%09details+%3E+summary.in_question+%7B%0D%0A%09%09color%3A+%235c6770%3B%0D%0A%09%7D%0D%0A%09p.result+%7B%0D%0A%09%09border-radius%3A+15px%3B%0D%0A%09%09background-color%3A+white%3B%0D%0A%09%09padding%3A+10px+15px+14px+15px%3B%0D%0A%09%09font-size%3A+1.2em%3B%0D%0A%09%09color%3A+black%3B%0D%0A%09%7D%0D%0A%09p.semi_result+%7B%0D%0A%09%09border-radius%3A+15px%3B%0D%0A%09%09background-color%3A+%23F2F3F5%3B%0D%0A%09%09padding%3A+10px+15px+14px+15px%3B%0D%0A%09%09color%3A+%235c6770%3B%0D%0A%09%7D%0D%0A%09div.button_nav+%7B%0D%0A%2F%2F%09%09color%3A+%235c6770%3B%0D%0A%09%7D%0D%0A%3C%2Fstyle%3E%0D%0A%3Cdiv+style%3D%22text-align%3Acenter%3B%22%3E%0D%0A%09%3Ch1%3ECan+I+expunge+my+record%3F%3C%2Fh1%3E%0D%0A%09%3Cp%3EThis+tool+is+only+an+informational+guide.+It+is+not+legal+advice.%3C%2Fp%3E%0D%0A%09%3Cp+style%3D%22font-size%3A0.7em%3B%22%3EUpdated+August+2023.%3C%2Fp%3E%0D%0A%09%3C%2Fdetails%3E%0D%0A%3C%2Fdiv%3E%0D%0A%0D%0AQ%28start%29%3A+Were+you+charged+as+an+adult+or+as+a+juvenile%3F%0D%0AA%3A+Adult%0D%0A%09Q%281.1%29%3AGOTO%3Aadult%0D%0AA%3A+Juvenile%0D%0A%09Q%281.2%29%3AGOTO%3Ayouth%0D%0A%0D%0AQ%28youth%29%3A+This+tool+is+for+adult+cases.+For+information+on+juvenile+cases%2C+please+contact+ODS.+GOTO%3Awhat_next%0D%0A%09%0D%0AQ%28adult%29%3A+Do+you+have+any+open+criminal+cases+right+now+or+any+pending+criminal+charges%3F%0D%0AA%3A+Yes%0D%0A%09Q%283.1%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+not+eligible+for+expungement+at+the+moment.%3C%2Fp%3E+You+will+need+to+wait+until+your+cases+are+resolved+before+you+can+seek+expungement.+GOTO%3Aprint_reminder%0D%0AA%3A+No%0D%0A%09Q%283.2%29%3AGOTO%3Acurrent_sentence_check%0D%0A%0D%0AQ%28current_sentence_check%29%3A+Are+you+currently+on+probation%2C+on+parole%2C+or+in+prison%3F%0D%0AA%3A+Yes%0D%0A%09Q%284.1%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+not+eligible+for+expungement+at+the+moment.%3C%2Fp%3E+You+will+need+to+wait+until+your+probation%2C+parole%2C+or+sentence+is+over+before+you+can+seek+expungement.+GOTO%3Aprint_reminder%0D%0AA%3A+No%0D%0A%09Q%284.2%29%3AGOTO%3Ain_favor_check%0D%0A%0D%0AQ%28in_favor_check%29%3A+How+was+the+case+resolved%3F%0D%0AA%3A+I+was+acquitted+of+all+charges.%0D%0A%09Q%285.1%29%3AGOTO%3Ais_in_favor%0D%0AA%3A+All+charges+were+dismissed.%0D%0A%09Q%285.2%29%3AGOTO%3Ais_in_favor%0D%0AA%3A+The+Attorney+General+entered+%3Ci%3Enolle+prosequi%3C%2Fi%3E+%28NP%29+on+all+charges.%0D%0A%09Q%285.3%29%3AGOTO%3Ais_in_favor%0D%0AA%3A+There+was+a+combination+of+the+above+results+that+covered+all+charges+in+the+case.%0D%0A%09Q%285.4%29%3AGOTO%3Ais_in_favor%0D%0AA%3A+I+completed+probation+before+judgment+with+a+successful+discharge.%0D%0A%09Q%285.5%29%3AGOTO%3Ais_in_favor%0D%0AA%3A+I+was+arrested+more+than+a+year+ago%2C+but+I+was+never+charged+in+court+on+this+case.%0D%0A%09Q%285.6%29%3AGOTO%3Ais_in_favor%0D%0AA%3A+I+was+charged+more+than+seven+years+ago%2C+but+my+case+has+not+been+resolved+%28the+disposition+is+unknown%2C+unobtainable%2C+or+pending%29.%0D%0A%09Q%285.7%29%3A+Are+any+of+these+true%3F%0D%0A%09A%3A+There+is+an+active+warrant+in+the+case.%0D%0A%09%09Q%285.7.1%29%3AGOTO%3Amandatory_special_check%0D%0A%09A%3A+There+has+been+documented+activity+on+the+case+within+the+last+twelve+months.%0D%0A%09%09Q%285.7.2%29%3AGOTO%3Amandatory_special_check%0D%0A%09A%3A+Other+charges+in+the+same+case+did+not+end+in+my+favor.%0D%0A%09%09Q%285.7.3%29%3AGOTO%3Amandatory_special_check%0D%0A%09A%3A+I+don%27t+know.%0D%0A%09%09Q%285.7.4%29%3AGOTO%3Ain_favor_unsure%0D%0A%09A%3A+None+of+the+above.%0D%0A%09%09Q%28is_in_favor%29%3A+This+means+that+the+case+was+%22resolved+in+your+favor.%22+GOTO%3Apotential_mandatory%0D%0AA%3A+None+of+the+above.%0D%0A%09Q%285.8%29%3AGOTO%3Amandatory_special_check%0D%0AA%3A+I+don%27t+know.%0D%0A%09Q%28in_favor_unsure%29%3A+It+could+be+a+good+idea+to+find+out.+If+the+case+was+resolved+in+your+favor%2C+it+could+be+eligible+for+mandatory+expungement+now.+Here+are+some+options%3A%0D%0A%09A%3A+I%27ll+try+to+find+out+then+come+back+to+this+chat+later.%0D%0A%09%09Q%285.9.1%29%3A+Okay.+GOTO%3Aprint_reminder%0D%0A%09A%3A+For+now%2C+I+want+to+skip+this+question+and+see+what+might+happen+if+the+case+did+not+terminate+in+my+favor.%0D%0A%09%09Q%285.9.2%29%3A+Okay.+Here+is+the+next+question.+GOTO%3Amandatory_special_check%0D%0A%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fupcoming-events%2F%5D+I+want+to+talk+to+an+attorney+in+person+at+an+expungement+clinic.%0D%0A%09%09Q%285.9.3%29%3AGOTO%3Aclinic%0D%0A%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fexpungements%2F%23contact%5D+I+want+to+email+ODS+to+help+me+figure+out+my+expungement+eligibility.%0D%0A%09%09Q%285.9.4%29%3AGOTO%3Aemail%0D%0A%09%0D%0AQ%28mandatory_special_check%29%3A+Was+the+conviction+one+of+these%3F%0D%0A%09%3Cul%3E%0D%0A%09%09%3Cli%3EPossession+of+a+personal+use+quantity+of+marijuana+%2816+Del.+C.+%C2%A74764%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPossession+of+drug+paraphernalia+%2816+Del.+C.+%C2%A74771%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnderage+possession+or+consumption+of+alcohol+%28904%28e%29+or+%28f%29%29%3C%2Fli%3E%0D%0A%09%3C%2Ful%3E%0D%0AA%3A+Yes%0D%0A%09Q%286.1%29%3AGOTO%3Apotential_mandatory%0D%0AA%3A+No%0D%0A%09Q%286.2%29%3AGOTO%3Aprevious_expungement_check%0D%0A%0D%0AQ%28previous_expungement_check%29%3A+Have+you+expunged+other+charges+or+convictions+before%3F%0D%0AA%3A+Yes%0D%0A%09Q%287.1%29%3A+Was+your+previous+expungement+for+a+felony+conviction%3F%0D%0A%09A%3A+Yes%0D%0A%09%09Q%287.1.1%29%3A+Are+you+now+seeking+to+expunge+another+felony%3F%0D%0A%09%09A%3A+Yes%0D%0A%09%09%09Q%287.1.1.1%29%3A+%3Cp+class%3D%22result%22%3EYour+current+felony+conviction+cannot+be+expunged.%3C%2Fp%3E+Delaware+allows+people+to+expunge+only+one+felony.+GOTO%3Aprint_reminder%0D%0A%09%09A%3A+No%0D%0A%09%09%09Q%287.1.1.2%29%3AGOTO%3Anot_two_felonies%0D%0A%09A%3A+No%0D%0A%09%09Q%28not_two_felonies%29%3A+How+long+ago+was+the+conviction+on+your+previous+expungement%3F%0D%0A%09%09A%3A+Less+than+ten+years+ago%0D%0A%09%09%09Q%287.1.2.1%29%3A+Are+you+currently+seeking+to+expunge+Violations+of+Probation+on+the+same+case+as+the+previous+expungement%3F%0D%0A%09%09%09A%3A+Yes%0D%0A%09%09%09%09Q%287.1.2.1.1%29%3A+Have+3+years+passed+since+those+violations%3F+%3C%21--+Or+should+this+be+since+the+expungement%3F+--%3E%0D%0A%09%09%09%09A%3A+Yes%0D%0A%09%09%09%09%09Q%287.1.2.1.1.1%29%3AGOTO%3Apotential_mandatory%0D%0A%09%09%09%09A%3A+No%0D%0A%09%09%09%09%09Q%287.1.2.1.1.2%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+likely+to+become+eligible+for+mandatory+expungement+after+the+3-year+waiting+period.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0A%09%09%09A%3A+No%0D%0A%09%09%09%09Q%287.1.2.1.2%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+not+eligible+for+expungement+at+the+moment.%3C%2Fp%3E+You+will+need+to+wait+until+10+years+after+the+previously+expunged+conviction+before+you+can+seek+this+expungement.+GOTO%3Aprint_reminder%0D%0A%09%09A%3A+More+than+ten+years+ago%0D%0A%09%09%09Q%287.1.2.2%29%3AGOTO%3Amotor_vehicle_check%0D%0AA%3A+No%0D%0A%09Q%287.2%29%3AGOTO%3Amotor_vehicle_check%0D%0A%0D%0AQ%28motor_vehicle_check%29%3A+Was+the+conviction+related+to+traffic%2C+DUI%2C+or+driving%3F%0D%0AA%3A+Yes%0D%0A%09Q%288.1%29%3A+Was+the+conviction+one+of+these%3F%0D%0A%09%09%09%09%09%3Cul%3E%0D%0A%09%09%09%09%09%09%3Cli%3EDriving+After+Judgment+Prohibited%3C%2Fli%3E%0D%0A%09%09%09%09%09%09%3Cli%3EReckless+Driving%3C%2Fli%3E%0D%0A%09%09%09%09%09%09%3Cli%3EOperation+of+a+Moving+Vehicle+Causing+Death%3C%2Fli%3E%0D%0A%09%09%09%09%09%3C%2Ful%3E%0D%0A%09A%3A+Yes%2C+it+is+one+of+those.%0D%0A%09%09Q%288.1.1%29%3AGOTO%3Afee_check%0D%0A%09A%3A+No%2C+it+is+none+of+those.%0D%0A%09%09Q%288.1.2%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+not+eligible+for+expungement.%3C%2Fp%3E+It+contains+one+of+the+%22Title+21+offenses%22+that+Delaware+does+not+allow+people+to+expunge.+GOTO%3Aprint_reminder%0D%0AA%3A+No%0D%0A%09Q%288.2%29%3AGOTO%3Afee_check%0D%0A%0D%0AQ%28fee_check%29%3A+To+expunge+a+case%2C+all+monetary+obligations+must+be+paid%2C+waived%2C+or+converted+to+a+civil+judgment.%3Cbr%3E+%3Cbr%3EDo+you+still+owe+fines%2C+fees%2C+or+restitution+on+the+case%3F%0D%0AA%3A+I+never+had+any.%0D%0A%09Q%289.1%29%3AGOTO%3Apardon_only_check%0D%0AA%3A+I+paid+them+all.%0D%0A%09Q%289.2%29%3AGOTO%3Apardon_only_check%0D%0AA%3A+I+am+trying+to+pay.%0D%0A%09Q%289.3%29%3A+When+you+apply+for+expungement%2C+you+may+ask+the+court+to+waive+the+unpaid+obligations+or+convert+them+to+a+civil+judgement.+If+the+court+does+not+grant+this+request%2C+you+will+need+to+pay+all+fines%2C+fees%2C+and+restitution+before+you+can+seek+expungement.+GOTO%3Apardon_only_check%0D%0AA%3A+I+already+got+the+unpaid+obligations+waived+or+converted+to+a+civil+judgment.%0D%0A%09Q%289.4%29%3AGOTO%3Apardon_only_check%0D%0AA%3A+I+don%27t+know.%0D%0A%09Q%289.5%29%3A+It+could+be+a+good+idea+to+find+out.+An+ODS+attorney+can+help+you+figure+out+if+you+owe+money+on+the+case.+And+even+if+you+still+owe+money%2C+you+might+be+able+to+move+forward+by+paying+or+petitioning+the+court.+Here+are+some+options%3A%0D%0A%09A%3A+I%27ll+try+to+find+out+on+my+own+then+come+back+to+this+chat+later.%0D%0A%09%09Q%289.5.1%29%3A+Okay.+GOTO%3Aprint_reminder%0D%0A%09A%3A+For+now%2C+I+want+to+skip+this+question+and+see+what+might+happen+if+I+don%27t+owe+money+on+the+case.%0D%0A%09%09Q%289.5.2%29%3A+Okay.+Here+is+the+next+question.+GOTO%3Apardon_only_check%0D%0A%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fupcoming-events%2F%5D+I+want+to+talk+to+an+attorney+in+person+at+an+expungement+clinic.%0D%0A%09%09Q%289.5.3%29%3AGOTO%3Aclinic%0D%0A%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fexpungements%2F%23contact%5D+I+want+to+email+ODS+to+help+me+figure+out+my+expungement+eligibility.%0D%0A%09%09Q%289.5.4%29%3AGOTO%3Aemail%0D%0A%0D%0AQ%28pardon_only_check%29%3A+Under+Delaware+law%2C+some+cases+are+ineligible+for+expungement.+Let%27s+check+for+those.%3Cbr%3E+%3Cbr%3EWas+the+conviction+one+of+these%3F%0D%0A%09%3Cul%3E%0D%0A%09%09%3Cli%3EManslaughter%3C%2Fli%3E%0D%0A%09%09%3Cli%3EMurder+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3EMurder+1st+Degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3ERape+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3ERape+1st+Degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3ESexual+Assault+of+a+Child+by+a+Person+in+Position+of+Trust+1st+Degree%3C%2Fli%3E%0D%0A%09%3C%2Ful%3E%0D%0AA%3A+Yes%0D%0A%09Q%2810.1%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+not+eligible+for+expungement.%3C%2Fp%3E+It+contains+one+of+the+offenses+that+Delaware+does+not+allow+people+to+expunge.+You+might+want+to+consider+pursuing+a+pardon.+GOTO%3Apotential_pardon%0D%0AA%3A+No%0D%0A%09Q%2810.2%29%3AGOTO%3Avictim_check%0D%0A%0D%0AQ%28victim_check%29%3A+Cases+with+specific+victims+are+not+allowed+to+be+expunged.+Let%27s+check+for+those.%3Cbr%3E+%3Cbr%3EWas+the+victim+a+child%3F%0D%0AA%3A+Yes%0D%0A%09Q%2811.1%29%3AGOTO%3Aexcluded_by_victim%0D%0AA%3A+No%0D%0A%09Q%2811.2%29%3A+Was+the+victim+over+age+62%3F%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2811.2.1%29%3AGOTO%3Aexcluded_by_victim%0D%0A%09A%3A+No%0D%0A%09%09Q%2811.2.2%29%3A+Was+the+victim+a+vulnerable+adult%3F%0D%0A%09%09%09%3Cdetails+class%3D%22in_question%22%3E%0D%0A%09%09%09%09%3Csummary+class%3D%22in_question%22%3EDefine+%22vulnerable+adult%22%3C%2Fsummary%3E%0D%0A%09%09%09%09%3Cp%3EA+%22vulnerable+adult%22+is+a+person+18+years+of+age+or+older+who%2C+by+reason+of+isolation%2C+sickness%2C+debilitation%2C+mental+illness+or+physical%2C+mental+or+cognitive+disability%2C+is+easily+susceptible+to+abuse%2C+neglect%2C+mistreatment%2C+intimidation%2C+manipulation%2C+coercion+or+exploitation.+It+includes+any+adult+for+whom+a+guardian+has+been+appointed.%3C%2Fp%3E%0D%0A%09%09%09%3C%2Fdetails%3E%0D%0A%09%09A%3A+Yes%0D%0A%09%09%09Q%28excluded_by_victim%29%3A+%3Cp+class%3D%22semi_result%22%3EBecause+of+who+the+victim+was%2C+your+record+is+not+eligible+for+mandatory+expungement.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement.+Let%27s+find+out.+GOTO%3Adiscretionary_felony_check_exclusion_yes%0D%0A%09%09A%3A+No%0D%0A%09%09%09Q%2811.2.2.2%29%3AGOTO%3Avictim_relationship_check%0D%0A%0D%0AQ%28victim_relationship_check%29%3A+Some+cases+that+are+categorized+as+domestic+violence+are+not+allowed+to+be+expunged.+Let%27s+check+for+those.%3Cbr%3E+%3Cbr%3E+Was+your+relationship+to+the+victim+one+of+these%3F%0D%0A%09%3Cul%3E%0D%0A%09%09%3Cli%3ESpouse%3C%2Fli%3E%0D%0A%09%09%3Cli%3EFormer+spouse%3C%2Fli%3E%0D%0A%09%09%3Cli%3ECaregiver+and+child%3C%2Fli%3E%0D%0A%09%09%3Cli%3EA+couple+living+together+with+a+child%3C%2Fli%3E%0D%0A%09%09%3Cli%3EAny+group+of+persons+related+by+blood+or+marriage+who+are+living+together%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPeople+who+cohabited+at+the+time+of+or+within+three+years+before+the+offense%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPeople+with+a+child+in+common+%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPeople+with+a+serious+dating+relationship+at+the+time+of+or+within+three+years+before+the+offense%3C%2Fli%3E%0D%0A%09%3C%2Ful%3E%0D%0AA%3A+Yes%0D%0A%09Q%2812.1%29%3A+Was+the+conviction+one+of+these%3F%0D%0A%09%09%3Cul%3E%0D%0A%09%09%09%3Cli%3EOffensive+Touching%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EMenacing%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EReckless+Endangerment+in+the+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EAssault+in+the+3rd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EAbuse+of+a+Sports+Official%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ETerroristic+Threatening%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EUnlawfully+Administering+Drugs%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EVehicular+Assault+in+the+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EUnlawful+Imprisonment+in+the+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EInterference+with+Custody%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECoercion%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EReckless+Burning+or+Exploding%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECriminal+Mischief%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECriminal+Trespass+in+the+3rd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECriminal+Trespass+in+the+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECriminal+Trespass+in+the+1st+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EHarassment%3C%2Fli%3E%0D%0A%09%09%3C%2Ful%3E%0D%0A%09A%3A+Yes%0D%0A%09%09Q%28excluded_by_victim_relationship%29%3A+%3Cp+class%3D%22semi_result%22%3EBecause+of+your+relationship+to+the+victim+and+the+type+of+offense%2C+your+record+is+not+eligible+for+mandatory+expungement.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement.+Let%27s+find+out.+GOTO%3Adiscretionary_felony_check_exclusion_yes%0D%0A%09A%3A+No%0D%0A%09%09Q%2812.1.2%29%3AGOTO%3Amandatory_excluded_offense_check%0D%0A%09A%3A+I+don%27t+know%0D%0A%09%09Q%2812.1.3%29%3A+It+could+be+a+good+idea+to+find+out.+If+the+case+is+one+of+the+above+types+of+domestic+violence%2C+then+the+case+would+not+be+eligible+for+mandatory+expungement%2C+but+it+could+still+be+eligible+for+discretionary+expungement.+Here+are+some+options%3A%0D%0A%09%09A%3A+I%27ll+try+to+find+out+then+come+back+to+this+chat+later.%0D%0A%09%09%09Q%2812.1.3.1%29%3A+Okay.+GOTO%3Aprint_reminder%0D%0A%09%09A%3A+For+now%2C+I+want+to+skip+this+question+and+see+what+might+happen+if+the+case+is+not+excluded+for+domestic+violence.%0D%0A%09%09%09Q%2812.1.3.2%29%3A+Okay.+Here+is+the+next+question.+GOTO%3Amandatory_excluded_offense_check%0D%0A%09%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fupcoming-events%2F%5D+I+want+to+talk+to+an+attorney+in+person+at+an+expungement+clinic.%0D%0A%09%09%09Q%2812.1.3.3%29%3AGOTO%3Aclinic%0D%0A%09%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fexpungements%2F%23contact%5D+I+want+to+email+ODS+to+help+me+figure+out+my+expungement+eligibility.%0D%0A%09%09%09Q%2812.1.3.4%29%3AGOTO%3Aemail%0D%0AA%3A+No%0D%0A%09Q%2812.2%29%3AGOTO%3Amandatory_excluded_offense_check%0D%0A%0D%0AQ%28mandatory_excluded_offense_check%29%3A+Some+types+of+convictions+are+not+allowed+to+be+expunged.+Let%27s+check+for+those.%3Cbr%3E+%3Cbr%3EWas+the+conviction+one+of+these%3F%0D%0A%09%3Cul%3E%0D%0A%09%09%3Cli%3EUnlawfully+administering+drugs+when+charged+in+conjunction+with+a+sexual+offense+as+defined+in+%C2%A7+761%28f%29.%3C%2Fli%3E%0D%0A%09%09%3Cli%3ESexual+harassment%3C%2Fli%3E%0D%0A%09%09%3Cli%3EIndecent+exposure+in+the+2nd+Degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3EIndecent+exposure+in+the+1st+Degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3ETrespassing+with+intent+to+peer+or+peep%3C%2Fli%3E%0D%0A%09%09%3Cli%3EOrganized+retail+crime%3C%2Fli%3E%0D%0A%09%09%3Cli%3EHome+improvement+fraud%3C%2Fli%3E%0D%0A%09%09%3Cli%3ENew+home+construction+fraud%3C%2Fli%3E%0D%0A%09%09%3Cli%3EOffenses+against+law-enforcement+animals%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPromoting+prison+contraband%3C%2Fli%3E%0D%0A%09%09%3Cli%3EResisting+arrest%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUse+of+an+animal+to+avoid+capture%3C%2Fli%3E%0D%0A%09%09%3Cli%3EHate+crime%3C%2Fli%3E%0D%0A%09%09%3Cli%3EMalicious+interference+with+emergency+communication%3C%2Fli%3E%0D%0A%09%09%3Cli%3EAbusing+a+corpse%3C%2Fli%3E%0D%0A%09%09%3Cli%3EViolation+of+privacy%3C%2Fli%3E%0D%0A%09%09%3Cli%3ELewdness%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPatronizing+a+prostitute%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPermitting+prostitution%3C%2Fli%3E%0D%0A%09%09%3Cli%3ECarrying+a+concealed+dangerous+instrument%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnlawfully+dealing+with+a+dangerous+weapon%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnlawfully+permitting+a+minor+access+to+a+firearm%3C%2Fli%3E%0D%0A%09%09%3Cli%3EPossession+of+a+weapon+in+a+Safe+School%2FRecreation+Zone%3C%2Fli%3E%0D%0A%09%09%3Cli%3EVehicular+assault+in+the+second+degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3EIncest%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnlawful+sexual+contact+in+the+third+degree%3C%2Fli%3E%0D%0A%09%09%3Cli%3ECoercion+%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnlawfully+dealing+with+a+child%3C%2Fli%3E%0D%0A%09%3C%2Ful%3E%0D%0AA%3A+Yes%0D%0A%09Q%2813.1%29%3AGOTO%3Aexcluded_by_offense%0D%0AA%3A+No%0D%0A%09Q%2813.2%29%3A+Was+the+conviction+one+of+these%3F%0D%0A%09%09%3Cul%3E%0D%0A%09%09%09%3Cli%3EGiving+unlawful+gratuities%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EReceiving+unlawful+gratuities%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EImproper+influence%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EOfficial+misconduct%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EPerjury+in+the+3rd+Degree%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EMaking+a+false+written+statement%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ETampering+with+a+juror%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EMisconduct+by+a+juror%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECriminal+contempt%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3ECriminal+contempt+of+a+domestic+violence+protective+order+or+lethal+violence+protective+order%3C%2Fli%3E%0D%0A%09%09%3C%2Ful%3E%0D%0A%09A%3A+Yes%0D%0A%09%09Q%28excluded_by_offense%29%3A+%3Cp+class%3D%22semi_result%22%3EBecause+of+the+type+of+offense%2C+your+record+is+not+eligible+for+mandatory+expungement.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement.+Let%27s+find+out.+GOTO%3Adiscretionary_felony_check_exclusion_yes%0D%0A%09A%3A+No%0D%0A%09%09Q%2813.2.2%29%3AGOTO%3Amandatory_charge_waiting_period_check%0D%0A%0D%0AQ%28mandatory_charge_waiting_period_check%29%3A+Different+charges+have+different+waiting+periods+for+mandatory+expungement.+Let%27s+look+into+those.%3Cbr%3E+%3Cbr%3EWas+the+conviction+for+Class+G+felony+drug+possession+%2816+Del.+C.+%C2%A74756%29%3F%0D%0AA%3A+Yes%0D%0A%09Q%2814.1%29%3A+Have+5+years+passed+since+the+discharge+date+or+conviction+date%2C+whichever+is+later%3F%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2814.1.1%29%3AGOTO%3Apotential_mandatory%0D%0A%09A%3A+No%0D%0A%09%09Q%2814.1.2%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+likely+to+become+eligible+for+mandatory+expungement+after+the+5-year+waiting+period.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement+sooner.+Let%27s+find+out.+GOTO%3Adiscretionary_excluded_offense_check%0D%0AA%3A+No%0D%0A%09Q%2814.2%29%3A+Was+the+conviction+for+one+of+these%3F%0D%0A%09%09%3Cul%3E%0D%0A%09%09%09%3Cli%3EMiscellaneous+drug+crimes+%2816+Del.+C.+%C2%A74757%29%0D%0A%09%09%09%09%3Cul%3E%0D%0A%09%09%09%09%09%3Cli%3EDistributing+a+controlled+substance+under+Schedule+I+or+II%3C%2Fli%3E%0D%0A%09%09%09%09%09%3Cli%3EUse+in+the+course+of+manufacture%2C+distribution%2C+prescribing%2C+dispensing%2C+pr+research+of+a+controlled+substance+or+to+obtain+a+controlled+substance+with+a+fictitious%2C+revoked%2C+or+suspended+registration%3C%2Fli%3E%0D%0A%09%09%09%09%09%3Cli%3EAcquiring+a+controlled+substance%2Fprescription+by+fraud%2C+deception%2C+etc.%3C%2Fli%3E%0D%0A%09%09%09%09%09%3Cli%3EFurnishing+false+or+fraudulent+information+or+omitting+information+with+respect+to+a+controlled+substance%3C%2Fli%3E%0D%0A%09%09%09%09%09%3Cli%3EObtaining+a+controlled+substance+by+theft%3C%2Fli%3E%0D%0A%09%09%09%09%09%3Cli%3EPrescribing+or+administering+anabolic+steroids+as+a+performance+enhancement%3C%2Fli%3E%0D%0A%09%09%09%09%3C%2Ful%3E%0D%0A%09%09%09%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EDealing+in+counterfeit+and+controlled+substances+%2816+Del.+C.+%C2%A74758%29%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EMaintaining+a+drug+property+%2816+Del.+C.+%C2%A74760%29%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EPossession+of+burglar%27s+tools+or+instruments+%2811+Del.+C.+%C2%A7828%29%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EForgery+2nd+degree+%2811+Del.+C.+%C2%A7861%29%3C%2Fli%3E%0D%0A%09%09%09%3Cli%3EUnlawful+use+of+a+payment+card+%2811+Del.+C.+%C2%A7903%29%3C%2Fli%3E%0D%0A%09%09%3C%2Ful%3E%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2814.2.1%29%3A+Have+10+years+passed+since+the+discharge+date+or+conviction+date%2C+whichever+is+later%3F%0D%0A%09%09%09%3Cdetails+class%3D%22in_question%22%3E%0D%0A%09%09%09%09%3Csummary+class%3D%22in_question%22%3EDefine+%22discharge+date%22%3C%2Fsummary%3E%0D%0A%09%09%09%09%3Cp%3EThe+%22discharge+date%22+is+the+date+you+were+released+from+incarceration%2C+probation%2C+or+parole%2C+whichever+is+later.%3C%2Fp%3E+%3C%21--+Or+is+it+just+released+from+incarceration%3F+--%3E%0D%0A%09%09%09%3C%2Fdetails%3E%09%09%0D%0A%09%09A%3A+Yes%0D%0A%09%09%09Q%2814.2.1.1%29%3AGOTO%3Apotential_mandatory%0D%0A%09%09A%3A+No%0D%0A%09%09%09Q%2814.2.1.2%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+likely+to+become+eligible+for+mandatory+expungement+after+the+10-year+waiting+period.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement+sooner.+Let%27s+find+out.+GOTO%3Adiscretionary_felony_check_exclusion_no%0D%0A%09A%3A+No%0D%0A%09%09Q%2814.2.2%29%3AGOTO%3Amandatory_felony_check%0D%0A%0D%0AQ%28mandatory_felony_check%29%3A+The+number+of+felonies+on+your+record+can+affect+your+eligibility.+Let%27s+look+into+those.%3Cbr%3E+%3Cbr%3EHow+many+felony+convictions+do+you+have%3F%0D%0AA%3A+More+than+one+felony%0D%0A%09Q%2815.1%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+likely+not+eligible+for+expungement+because+it+contains+more+than+one+felony.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0AA%3A+One+felony%0D%0A%09Q%2815.2%29%3A+%3Cp+class%3D%22semi_result%22%3EYour+record+is+not+eligible+for+mandatory+expungement+because+it+contains+a+felony+%28and+that+felony+is+not+Class+G+felony+drug+possession%29.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement.+Let%27s+find+out.+GOTO%3Adiscretionary_excluded_offense_check%0D%0AA%3A+No+felonies%0D%0A%09Q%2815.3%29%3AGOTO%3Amandatory_waiting_period_check%0D%0A%0D%0AQ%28mandatory_waiting_period_check%29%3A+The+types+of+convictions+on+your+record+can+affect+your+eligibility.+So+can+the+amount+of+time+that+has+passed.+Let%27s+look+into+those.%3Cbr%3E+%3Cbr%3EWhat+conviction+levels+are+in+this+case%3F%0D%0AA%3A+Violations+only%0D%0A%09Q%2816.1%29%3A+Do+you+have+convictions+from+any+other+cases%3F%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2816.1.1%29%3A+Were+the+other+convictions+one+or+a+combination+of+these%3F%0D%0A%09%09%09%3Cul%3E%0D%0A%09%09%09%09%3Cli%3EUnderage+Possession+of+Alcohol+%284+Del.+C.+%C2%A7+904%28e%29%29%3C%2Fli%3E%0D%0A%09%09%09%09%3Cli%3EUnderage+Possession+of+Personal+Use+Quantity+of+Marijuana+%2816+Del.+C.+%C2%A7+4764%28c%29%29%3C%2Fli%3E%0D%0A%09%09%09%09%3Cli%3EMotor+Vehicle+Offense+%28Title+21%29%3C%2Fli%3E%0D%0A%09%09%09%3C%2Ful%3E%0D%0A%09%09A%3A+Yes%2C+all+the+other+convictions+were+one+or+a+combination+of+those.%0D%0A%09%09%09Q%2816.1.1.1%29%3A+The+other+convictions+could+be+eligible+for+mandatory+expungement+right+now.+But+your+situation+is+complex.+You+can+get+in+touch+with+ODS+to+help+you+understand+your+eligibility+and+your+options.+%3C%21--+What%27s+their+move+here%3A+Continue+to+find+out+if+you+can+expunge+all+at+once%3F+Apply+to+expunge+the+other+ones+first%3F+%28Would+they+then+have+to+wait+ten+years+to+expunge+this+one%2C+or+no%3F%29+--%3E+GOTO%3Aprint_reminder%0D%0A%09%09A%3A+No%2C+at+least+one+other+conviction+is+something+other+than+those.%0D%0A%09%09%09Q%2816.1.1.2%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+not+eligible+for+expungement.%3C%2Fp%3E+Delaware+doesn%27t+allow+the+types+of+convictions+on+your+record+to+be+expunged.+%3C%21--+explanation+--%3E+GOTO%3Aprint_reminder%0D%0A%09A%3A+No%0D%0A%09%09Q%2816.1.2%29%3A+Have+3+years+passed+since+the+conviction%3F%0D%0A%09%09A%3A+Yes%0D%0A%09%09%09Q%2816.1.2.1%29%3AGOTO%3Apotential_mandatory%0D%0A%09%09A%3A+No%0D%0A%09%09%09Q%2816.1.2.2%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+likely+to+become+eligible+for+mandatory+expungement+after+the+3-year+waiting+period.%3C%2Fp%3E+%3C%21--+%3Cp+class%3D%22result%22%3EAlso%2C+your+record+is+likely+to+become+eligible+for+discretionary+expungement+after+the+3-year+waiting+period.%3C%2Fp%3E+--%3E+GOTO%3Aprint_reminder%0D%0AA%3A+Misdemeanors+only%0D%0A%09Q%2816.2%29%3AGOTO%3Amisdemeanors_and_under%0D%0AA%3A+Misdemeanors+and+violations%0D%0A%09Q%28misdemeanors_and_under%29%3A+Do+you+have+convictions+from+any+other+cases%3F%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2816.3.1%29%3A+Were+the+other+convictions+one+or+a+combination+of+these%3F%0D%0A%09%09%09%3Cul%3E%0D%0A%09%09%09%09%3Cli%3EUnderage+Possession+of+Alcohol+%284+Del.+C.+%C2%A7+904%28e%29%29%3C%2Fli%3E%0D%0A%09%09%09%09%3Cli%3EUnderage+Possession+of+Personal+Use+Quantity+of+Marijuana+%2816+Del.+C.+%C2%A7+4764%28c%29%29%3C%2Fli%3E%0D%0A%09%09%09%09%3Cli%3EMotor+Vehicle+Offense+%28Title+21%29%3C%2Fli%3E%0D%0A%09%09%09%3C%2Ful%3E%0D%0A%09%09A%3A+Yes%2C+all+the+other+convictions+were+one+or+a+combination+of+those.%0D%0A%09%09%09Q%2816.3.1.1%29%3A+These+other+convictions+could+be+eligible+for+mandatory+expungement+right+now.+But+your+situation+is+complex.+You+can+get+in+touch+with+ODS+to+help+you+understand+your+eligibility+and+your+options.+%3C%21--+What%27s+their+move+here%3A+Continue+to+find+out+if+you+can+expunge+all+at+once%3F+Apply+to+expunge+the+other+ones+first%3F+%28Would+they+then+have+to+wait+ten+years+to+expunge+this+one%2C+or+no%3F%29+--%3E+GOTO%3Aprint_reminder%0D%0A%09%09A%3A+No%2C+at+least+one+other+conviction+is+something+other+than+those.%0D%0A%09%09%09Q%2816.3.1.2%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+not+eligible+for+expungement.%3C%2Fp%3E+Delaware+doesn%27t+allow+the+types+of+convictions+on+your+record+to+be+expunged.+%3C%21--+explanation+--%3E+GOTO%3Aprint_reminder%0D%0A%09A%3A+No%0D%0A%09%09Q%2816.3.2%29%3A+Have+5+years+passed+since+the+conviction%3F%0D%0A%09%09A%3A+Yes%0D%0A%09%09%09Q%2816.3.2.1%29%3AGOTO%3Apotential_mandatory%0D%0A%09%09A%3A+No%0D%0A%09%09%09Q%2816.3.2.2%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+likely+to+become+eligible+for+mandatory+expungement+after+the+5-year+waiting+period.%3C%2Fp%3E+But+it+might+be+eligible+for+discretionary+expungement+sooner.+Let%27s+find+out.+GOTO%3Adiscretionary_3_year_wait_check%0D%0A%0D%0AQ%28discretionary_felony_check_exclusion_yes%29%3A+The+number+of+felonies+on+your+record+can+affect+your+eligibility.+Let%27s+look+into+those.%3Cbr%3E+%3Cbr%3EHow+many+felony+convictions+do+you+have%3F%0D%0AA%3A+More+than+one+felony%0D%0A%09Q%2817.1%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+likely+not+eligible+for+discretionary+expungement+because+it+contains+more+than+one+felony.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0AA%3A+One+felony%0D%0A%09Q%2817.2%29%3AGOTO%3Adiscretionary_excluded_offense_check%0D%0AA%3A+No+felonies%0D%0A%09Q%2817.3%29%3AGOTO%3Adiscretionary_excluded_offense_check%0D%0A%0D%0AQ%28discretionary_felony_check_exclusion_no%29%3A+The+number+of+felonies+on+your+record+can+affect+your+eligibility.+Let%27s+look+into+those.%3Cbr%3E+%3Cbr%3EHow+many+felony+convictions+do+you+have%3F%0D%0AA%3A+More+than+one+felony%0D%0A%09Q%2818.1%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+likely+not+eligible+for+discretionary+expungement+because+it+contains+more+than+one+felony.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0AA%3A+One+felony%0D%0A%09Q%2818.2%29%3AGOTO%3Adiscretionary_excluded_offense_check%0D%0AA%3A+No+felonies%0D%0A%09Q%2818.3%29%3AGOTO%3Adiscretionary_waiting_period_3_check%0D%0A%0D%0AQ%28discretionary_excluded_offense_check%29%3A+Some+types+of+convictions+require+a+pardon+before+they+can+be+eligible+for+expungement.+Let%27s+check+for+those.%3Cbr%3E+%3Cbr%3EWas+the+conviction+one+of+these%3F%0D%0A%09%3Cul%3E%0D%0A%09%09%3Cli%3EViolent+Felony+%2811+Del.+C.+4201%28c%29%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EInfirm%2FVulnerable+Persons+%2816+Del.+C.+%C2%A7+1136+or+31+Del.+C.+%C2%A7+3913%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EFelony+conviction+involving+physical+or+sexual+assault+crimes+%2831+Del.+C.+%C2%A7+309%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EVehicular+Assault+2nd+Degree+%2811+Del.+C.+%C2%A7+628%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EIncest+%2811+Del.+C.%C2%A7+766%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnlawful+Sexual+Contact+%2811+Del.+C.+%C2%A7+767%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3ECoercion+%2811+Del.+C.+%C2%A7+791%29%3C%2Fli%3E%0D%0A%09%09%3Cli%3EUnlawful+Dealing+With+a+Child+%2811+Del.+C.+%C2%A7+1106%29%3C%2Fli%3E%0D%0A%09%3C%2Ful%3E%0D%0AA%3A+Yes%0D%0A%09Q%2819.1%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+not+eligible+for+discretionary+expungement+right+now.%3C%2Fp%3E+You+might+want+to+consider+pursuing+a+pardon.+If+you+can+get+an+unconditional+pardon+for+this+case%2C+it+might+then+become+eligible+for+discretionary+expungement.+GOTO%3Apotential_pardon%0D%0AA%3A+No%0D%0A%09Q%2819.2%29%3AGOTO%3Adiscretionary_waiting_period_7_check%0D%0AA%3A+I+don%27t+know%0D%0A%09Q%2819.3%29%3A+It+could+be+a+good+idea+to+find+out.+If+you+have+one+of+these+convictions%2C+you+wouldn%27t+be+eligible+for+expungement+right+now%2C+but+you+could+become+eligible+if+you+can+obtain+a+pardon.+Here+are+some+options%3A%0D%0A%09A%3A+I%27ll+try+to+find+out+then+come+back+to+this+chat+later.%0D%0A%09%09Q%2819.3.1%29%3A+Okay.+GOTO%3Aprint_reminder%0D%0A%09A%3A+For+now%2C+I+want+to+skip+this+question+and+see+what+might+happen+if+I+don%27t+have+one+of+these+convictions.%0D%0A%09%09Q%2819.3.2%29%3A+Okay.+Here+is+the+next+question.+GOTO%3Adiscretionary_waiting_period_7_check%0D%0A%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fupcoming-events%2F%5D+I+want+to+talk+to+an+attorney+in+person+at+an+expungement+clinic.%0D%0A%09%09Q%2819.3.3%29%3AGOTO%3Aclinic%0D%0A%09A%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fexpungements%2F%23contact%5D+I+want+to+email+ODS+to+help+me+figure+out+my+expungement+eligibility.%0D%0A%09%09Q%2819.3.4%29%3AGOTO%3Aemail%0D%0A%0D%0AQ%28discretionary_waiting_period_7_check%29%3A+Do+you+have+convictions+from+any+other+cases%3F%0D%0AA%3A+Yes%0D%0A%09Q%2820.1%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+not+eligible+for+discretionary+expungement.%3C%2Fp%3E+Delaware+doesn%27t+allow+the+type+of+conviction+on+your+record+to+be+expunged+when+you+have+additional+convictions.+%3C%21--+explanation+--%3E+GOTO%3Aprint_reminder%0D%0AA%3A+No%0D%0A%09Q%2820.2%29%3A+Have+7+years+passed+since+the+discharge+date+or+conviction+date%2C+whichever+is+later%3F%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2820.2.1%29%3AGOTO%3Apotential_discretionary%0D%0A%09A%3A+No%0D%0A%09%09Q%2820.2.2%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+likely+to+become+eligible+for+mandatory+expungement+after+the+7-year+waiting+period.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0A%0D%0AQ%28discretionary_waiting_period_3_check%29%3A+Do+you+have+convictions+from+any+other+cases%3F%0D%0AA%3A+Yes%0D%0A%09Q%2821.1%29%3A+%3Cp+class%3D%22result%22%3EYour+criminal+record+is+not+eligible+for+discretionary+expungement.%3C%2Fp%3E+Delaware+doesn%27t+allow+the+type+of+conviction+on+your+record+to+be+expunged+when+you+have+additional+convictions.+%3C%21--+explanation+--%3E+GOTO%3Aprint_reminder%0D%0AA%3A+No%0D%0A%09Q%28discretionary_3_year_wait_check%29%3A+Have+3+years+passed+since+the+discharge+date+or+conviction+date%2C+whichever+is+later%3F+%3C%21--+Are+all+references+to+conviction+%28versus+the+later+of+discharge+or+conviction%29+date+correct%3F+--%3E%0D%0A%09A%3A+Yes%0D%0A%09%09Q%2821.2.1%29%3AGOTO%3Apotential_discretionary%0D%0A%09A%3A+No%0D%0A%09%09Q%2821.2.2%29%3A+%3Cp+class%3D%22result%22%3EYour+record+is+likely+to+become+eligible+for+mandatory+expungement+after+the+3-year+waiting+period.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0A%0D%0AQ%28potential_pardon%29%3A+The+Delaware+Department+of+Labor%27s+%3Ca+target%3D%22_blank%22+href%3D%22https%3A%2F%2Flabor.delaware.gov%2Fapex%2F%22%3EAPEX+Program%3C%2Fa%3E+helps+people+through+the+pardon+process.+GOTO%3Aprint_reminder%0D%0A%0D%0AQ%28potential_mandatory%29%3A+%3Cp+class%3D%22result%22%3EYour+criminal+record+could+be+eligible+for+mandatory+expungement+now.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0A%0D%0AQ%28potential_discretionary%29%3A+%3Cp+class%3D%22result%22%3EYour+criminal+record+could+be+eligible+for+discretionary+expungement+now.%3C%2Fp%3E+GOTO%3Aprint_reminder%0D%0A%0D%0AQ%28print_reminder%29%3A+Before+you+close+this+tab%2C+%3Cb%3Eremember+to+print+this+page%3C%2Fb%3E+if+you+want+to+keep+a+copy.+GOTO%3Awhat_next%0D%0A%0D%0AQ%28what_next%29%3A+What+would+you+like+to+do+next%3F%0D%0AA%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fupcoming-events%2F%5D+%3Cdiv+class%3D%22button_nav%22%3ETalk+to+an+attorney+in+person+at+an+expungement+clinic.%3C%2Fdiv%3E%0D%0A%09Q%28clinic%29%3A+The+calendar+opened+in+another+tab.%0D%0AA%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2Fexpungements%2F%23contact%5D+%3Cdiv+class%3D%22button_nav%22%3EEmail+ODS+to+help+me+figure+out+my+expungement+eligibility.%3C%2Fdiv%3E%0D%0A%09Q%28email%29%3A+The+contact+form+opened+in+another+tab.%0D%0AA%3A+Call+ODS+on+the+phone+to+discuss+my+expungement+eligibility.%0D%0A%09Q%28phone%29%3A+The+phone+number+is+302-577-5217.%0D%0AA%3A%5Bhttps%3A%2F%2Flabor.delaware.gov%2Fapex%2F%5D+%3Cdiv+class%3D%22button_nav%22%3ELearn+about+pardons.%3C%2Fdiv%3E%0D%0A%09Q%2826.4%29%3A+The+link+opened+in+another+tab.%0D%0AA%3A%5Bhttps%3A%2F%2Fods.delaware.gov%2F%5D+%3Cdiv+class%3D%22button_nav%22%3EGo+to+the+Delaware+Office+of+Defense+Services+website.%3C%2Fdiv%3E%0D%0A%09Q%2826.5%29%3A+The+link+opened+in+another+tab.
         </div>
         <div id="ondeck" name="ondeck">
           <div id="Q-1" name="Q-1" style="display: none">
@@ -500,7 +368,7 @@
           </div>
           <div id="Q-3.1" name="Q-3.1" style="display: none">
             <p class="result">
-              This case is not eligible for expungement at the moment.
+              Your record is not eligible for expungement at the moment.
             </p>
             You will need to wait until your cases are resolved before you can
             seek expungement. GOTO:25
@@ -511,7 +379,7 @@
           </div>
           <div id="Q-4.1" name="Q-4.1" style="display: none">
             <p class="result">
-              This case is not eligible for expungement at the moment.
+              Your record is not eligible for expungement at the moment.
             </p>
             You will need to wait until your probation, parole, or sentence is
             over before you can seek expungement. GOTO:25
@@ -599,14 +467,14 @@
           </div>
           <div id="Q-7.1.2.1.1.2" name="Q-7.1.2.1.1.2" style="display: none">
             <p class="result">
-              This case is likely to become eligible for mandatory expungement
+              Your record is likely to become eligible for mandatory expungement
               after the 3-year waiting period.
             </p>
             GOTO:25
           </div>
           <div id="Q-7.1.2.1.2" name="Q-7.1.2.1.2" style="display: none">
             <p class="result">
-              This case is not eligible for expungement at the moment.
+              Your record is not eligible for expungement at the moment.
             </p>
             You will need to wait until 10 years after the previously expunged
             conviction before you can seek this expungement. GOTO:25
@@ -628,9 +496,9 @@
           </div>
           <div id="Q-8.1.1" name="Q-8.1.1" style="display: none">GOTO:9</div>
           <div id="Q-8.1.2" name="Q-8.1.2" style="display: none">
-            <p class="result">This case is not eligible for expungement.</p>
-            It is one of the "Title 21 offenses" that Delaware does not allow
-            people to expunge. GOTO:25
+            <p class="result">Your record is not eligible for expungement.</p>
+            It contains one of the "Title 21 offenses" that Delaware does not
+            allow people to expunge. GOTO:25
           </div>
           <div id="Q-8.2" name="Q-8.2" style="display: none">GOTO:9</div>
           <div id="Q-9" name="Q-9" style="display: none">
@@ -678,9 +546,9 @@
             </ul>
           </div>
           <div id="Q-10.1" name="Q-10.1" style="display: none">
-            <p class="result">This case is not eligible for expungement.</p>
-            It is one of the offenses that Delaware does not allow people to
-            expunge. You might want to consider pursuing a pardon. GOTO:22
+            <p class="result">Your record is not eligible for expungement.</p>
+            It contains one of the offenses that Delaware does not allow people
+            to expunge. You might want to consider pursuing a pardon. GOTO:22
           </div>
           <div id="Q-10.2" name="Q-10.2" style="display: none">GOTO:11</div>
           <div id="Q-11" name="Q-11" style="display: none">
@@ -713,7 +581,7 @@
           </div>
           <div id="Q-11.2.2.1" name="Q-11.2.2.1" style="display: none">
             <p class="semi_result">
-              Because of who the victim was, this case is not eligible for
+              Because of who the victim was, your record is not eligible for
               mandatory expungement.
             </p>
             But it might be eligible for discretionary expungement. Let's find
@@ -772,7 +640,7 @@
           <div id="Q-12.1.1" name="Q-12.1.1" style="display: none">
             <p class="semi_result">
               Because of your relationship to the victim and the type of
-              offense, this case is not eligible for mandatory expungement.
+              offense, your record is not eligible for mandatory expungement.
             </p>
             But it might be eligible for discretionary expungement. Let's find
             out. GOTO:17
@@ -856,7 +724,7 @@
           </div>
           <div id="Q-13.2.1" name="Q-13.2.1" style="display: none">
             <p class="semi_result">
-              Because of the type of offense, this case is not eligible for
+              Because of the type of offense, your record is not eligible for
               mandatory expungement.
             </p>
             But it might be eligible for discretionary expungement. Let's find
@@ -876,7 +744,7 @@
           <div id="Q-14.1.1" name="Q-14.1.1" style="display: none">GOTO:23</div>
           <div id="Q-14.1.2" name="Q-14.1.2" style="display: none">
             <p class="result">
-              This case is likely to become eligible for mandatory expungement
+              Your record is likely to become eligible for mandatory expungement
               after the 5-year waiting period.
             </p>
             But it might be eligible for discretionary expungement sooner. Let's
@@ -918,7 +786,7 @@
               </li>
               <li>Maintaining a drug property (16 Del. C. §4760)</li>
               <li>
-                Possession of burglar’s tools or instruments (11 Del. C. §828)
+                Possession of burglar's tools or instruments (11 Del. C. §828)
               </li>
               <li>Forgery 2nd degree (11 Del. C. §861)</li>
               <li>Unlawful use of a payment card (11 Del. C. §903)</li>
@@ -941,7 +809,7 @@
           </div>
           <div id="Q-14.2.1.2" name="Q-14.2.1.2" style="display: none">
             <p class="result">
-              This case is likely to become eligible for mandatory expungement
+              Your record is likely to become eligible for mandatory expungement
               after the 10-year waiting period.
             </p>
             But it might be eligible for discretionary expungement sooner. Let's
@@ -955,14 +823,14 @@
           </div>
           <div id="Q-15.1" name="Q-15.1" style="display: none">
             <p class="result">
-              This case is likely not eligible for expungement because your
-              record has more than one felony.
+              Your record is likely not eligible for expungement because it
+              contains more than one felony.
             </p>
             GOTO:25
           </div>
           <div id="Q-15.2" name="Q-15.2" style="display: none">
             <p class="semi_result">
-              This case is not eligible for mandatory expungement because it
+              Your record is not eligible for mandatory expungement because it
               contains a felony (and that felony is not Class G felony drug
               possession).
             </p>
@@ -997,8 +865,8 @@
             GOTO:25
           </div>
           <div id="Q-16.1.1.2" name="Q-16.1.1.2" style="display: none">
-            <p class="result">This case is not eligible for expungement.</p>
-            Delaware doesn’t allow the types of convictions on your record to be
+            <p class="result">Your record is not eligible for expungement.</p>
+            Delaware doesn't allow the types of convictions on your record to be
             expunged.
             <!-- explanation -->
             GOTO:25
@@ -1011,13 +879,10 @@
           </div>
           <div id="Q-16.1.2.2" name="Q-16.1.2.2" style="display: none">
             <p class="result">
-              This case is likely to become eligible for mandatory expungement
+              Your record is likely to become eligible for mandatory expungement
               after the 3-year waiting period.
             </p>
-            <p class="result">
-              Also, this case is likely to become eligible for discretionary
-              expungement after the 3-year waiting period.
-            </p>
+            <!-- <p class="result">Also, your record is likely to become eligible for discretionary expungement after the 3-year waiting period.</p> -->
             GOTO:25
           </div>
           <div id="Q-16.2" name="Q-16.2" style="display: none">GOTO:16.3</div>
@@ -1043,8 +908,8 @@
             GOTO:25
           </div>
           <div id="Q-16.3.1.2" name="Q-16.3.1.2" style="display: none">
-            <p class="result">This case is not eligible for expungement.</p>
-            Delaware doesn’t allow the types of convictions on your record to be
+            <p class="result">Your record is not eligible for expungement.</p>
+            Delaware doesn't allow the types of convictions on your record to be
             expunged.
             <!-- explanation -->
             GOTO:25
@@ -1057,7 +922,7 @@
           </div>
           <div id="Q-16.3.2.2" name="Q-16.3.2.2" style="display: none">
             <p class="result">
-              This case is likely to become eligible for mandatory expungement
+              Your record is likely to become eligible for mandatory expungement
               after the 5-year waiting period.
             </p>
             But it might be eligible for discretionary expungement sooner. Let's
@@ -1070,8 +935,8 @@
           </div>
           <div id="Q-17.1" name="Q-17.1" style="display: none">
             <p class="result">
-              This case is likely not eligible for discretionary expungement
-              because your record has more than one felony.
+              Your record is likely not eligible for discretionary expungement
+              because it contains more than one felony.
             </p>
             GOTO:25
           </div>
@@ -1084,8 +949,8 @@
           </div>
           <div id="Q-18.1" name="Q-18.1" style="display: none">
             <p class="result">
-              This case is likely not eligible for discretionary expungement
-              because your record has more than one felony.
+              Your record is likely not eligible for discretionary expungement
+              because it contains more than one felony.
             </p>
             GOTO:25
           </div>
@@ -1114,7 +979,8 @@
           </div>
           <div id="Q-19.1" name="Q-19.1" style="display: none">
             <p class="result">
-              This case is not eligible for discretionary expungement right now.
+              Your record is not eligible for discretionary expungement right
+              now.
             </p>
             You might want to consider pursuing a pardon. If you can get an
             unconditional pardon for this case, it might then become eligible
@@ -1146,6 +1012,8 @@
             <p class="result">
               Your record is not eligible for discretionary expungement.
             </p>
+            Delaware doesn't allow the type of conviction on your record to be
+            expunged when you have additional convictions.
             <!-- explanation -->
             GOTO:25
           </div>
@@ -1169,6 +1037,8 @@
               Your criminal record is not eligible for discretionary
               expungement.
             </p>
+            Delaware doesn't allow the type of conviction on your record to be
+            expunged when you have additional convictions.
             <!-- explanation -->
             GOTO:25
           </div>
@@ -1180,7 +1050,7 @@
           <div id="Q-21.2.1" name="Q-21.2.1" style="display: none">GOTO:24</div>
           <div id="Q-21.2.2" name="Q-21.2.2" style="display: none">
             <p class="result">
-              This case is likely to become eligible for mandatory expungement
+              Your record is likely to become eligible for mandatory expungement
               after the 3-year waiting period.
             </p>
             GOTO:25
@@ -2975,8 +2845,8 @@
         >
 <div id='Q-1' name='Q-1' style='display:none;'> Were you charged as an adult or as a juvenile?
 </div><div id='Q-1.1' name='Q-1.1' style='display:none;'>GOTO:3</div><div id='Q-1.2' name='Q-1.2' style='display:none;'>GOTO:2</div><div id='Q-2' name='Q-2' style='display:none;'> This tool is for adult cases. For information on juvenile cases, please contact ODS. GOTO:26</div><div id='Q-3' name='Q-3' style='display:none;'> Do you have any open criminal cases right now or any pending criminal charges?
-</div><div id='Q-3.1' name='Q-3.1' style='display:none;'> <p class="result">This case is not eligible for expungement at the moment.</p> You will need to wait until your cases are resolved before you can seek expungement. GOTO:25</div><div id='Q-3.2' name='Q-3.2' style='display:none;'>GOTO:4</div><div id='Q-4' name='Q-4' style='display:none;'> Are you currently on probation, on parole, or in prison?
-</div><div id='Q-4.1' name='Q-4.1' style='display:none;'> <p class="result">This case is not eligible for expungement at the moment.</p> You will need to wait until your probation, parole, or sentence is over before you can seek expungement. GOTO:25</div><div id='Q-4.2' name='Q-4.2' style='display:none;'>GOTO:5</div><div id='Q-5' name='Q-5' style='display:none;'> How was the case resolved?
+</div><div id='Q-3.1' name='Q-3.1' style='display:none;'> <p class="result">Your record is not eligible for expungement at the moment.</p> You will need to wait until your cases are resolved before you can seek expungement. GOTO:25</div><div id='Q-3.2' name='Q-3.2' style='display:none;'>GOTO:4</div><div id='Q-4' name='Q-4' style='display:none;'> Are you currently on probation, on parole, or in prison?
+</div><div id='Q-4.1' name='Q-4.1' style='display:none;'> <p class="result">Your record is not eligible for expungement at the moment.</p> You will need to wait until your probation, parole, or sentence is over before you can seek expungement. GOTO:25</div><div id='Q-4.2' name='Q-4.2' style='display:none;'>GOTO:5</div><div id='Q-5' name='Q-5' style='display:none;'> How was the case resolved?
 </div><div id='Q-5.1' name='Q-5.1' style='display:none;'>GOTO:5.7.5</div><div id='Q-5.2' name='Q-5.2' style='display:none;'>GOTO:5.7.5</div><div id='Q-5.3' name='Q-5.3' style='display:none;'>GOTO:5.7.5</div><div id='Q-5.4' name='Q-5.4' style='display:none;'>GOTO:5.7.5</div><div id='Q-5.5' name='Q-5.5' style='display:none;'>GOTO:5.7.5</div><div id='Q-5.6' name='Q-5.6' style='display:none;'>GOTO:5.7.5</div><div id='Q-5.7' name='Q-5.7' style='display:none;'> Are any of these true?
 </div><div id='Q-5.7.1' name='Q-5.7.1' style='display:none;'>GOTO:6</div><div id='Q-5.7.2' name='Q-5.7.2' style='display:none;'>GOTO:6</div><div id='Q-5.7.3' name='Q-5.7.3' style='display:none;'>GOTO:6</div><div id='Q-5.7.4' name='Q-5.7.4' style='display:none;'>GOTO:5.9</div><div id='Q-5.7.5' name='Q-5.7.5' style='display:none;'> This means that the case was "resolved in your favor." GOTO:23</div><div id='Q-5.8' name='Q-5.8' style='display:none;'>GOTO:6</div><div id='Q-5.9' name='Q-5.9' style='display:none;'> It could be a good idea to find out. If the case was resolved in your favor, it could be eligible for mandatory expungement now. Here are some options:
 </div><div id='Q-5.9.1' name='Q-5.9.1' style='display:none;'> Okay. GOTO:25</div><div id='Q-5.9.2' name='Q-5.9.2' style='display:none;'> Okay. Here is the next question. GOTO:6</div><div id='Q-5.9.3' name='Q-5.9.3' style='display:none;'>GOTO:26.1</div><div id='Q-5.9.4' name='Q-5.9.4' style='display:none;'>GOTO:26.2</div><div id='Q-6' name='Q-6' style='display:none;'> Was the conviction one of these?
@@ -2991,14 +2861,14 @@
 </div><div id='Q-7.1.1.1' name='Q-7.1.1.1' style='display:none;'> <p class="result">Your current felony conviction cannot be expunged.</p> Delaware allows people to expunge only one felony. GOTO:25</div><div id='Q-7.1.1.2' name='Q-7.1.1.2' style='display:none;'>GOTO:7.1.2</div><div id='Q-7.1.2' name='Q-7.1.2' style='display:none;'> How long ago was the conviction on your previous expungement?
 </div><div id='Q-7.1.2.1' name='Q-7.1.2.1' style='display:none;'> Are you currently seeking to expunge Violations of Probation on the same case as the previous expungement?
 </div><div id='Q-7.1.2.1.1' name='Q-7.1.2.1.1' style='display:none;'> Have 3 years passed since those violations? <!-- Or should this be since the expungement? -->
-</div><div id='Q-7.1.2.1.1.1' name='Q-7.1.2.1.1.1' style='display:none;'>GOTO:23</div><div id='Q-7.1.2.1.1.2' name='Q-7.1.2.1.1.2' style='display:none;'> <p class="result">This case is likely to become eligible for mandatory expungement after the 3-year waiting period.</p> GOTO:25</div><div id='Q-7.1.2.1.2' name='Q-7.1.2.1.2' style='display:none;'> <p class="result">This case is not eligible for expungement at the moment.</p> You will need to wait until 10 years after the previously expunged conviction before you can seek this expungement. GOTO:25</div><div id='Q-7.1.2.2' name='Q-7.1.2.2' style='display:none;'>GOTO:8</div><div id='Q-7.2' name='Q-7.2' style='display:none;'>GOTO:8</div><div id='Q-8' name='Q-8' style='display:none;'> Was the conviction related to traffic, DUI, or driving?
+</div><div id='Q-7.1.2.1.1.1' name='Q-7.1.2.1.1.1' style='display:none;'>GOTO:23</div><div id='Q-7.1.2.1.1.2' name='Q-7.1.2.1.1.2' style='display:none;'> <p class="result">Your record is likely to become eligible for mandatory expungement after the 3-year waiting period.</p> GOTO:25</div><div id='Q-7.1.2.1.2' name='Q-7.1.2.1.2' style='display:none;'> <p class="result">Your record is not eligible for expungement at the moment.</p> You will need to wait until 10 years after the previously expunged conviction before you can seek this expungement. GOTO:25</div><div id='Q-7.1.2.2' name='Q-7.1.2.2' style='display:none;'>GOTO:8</div><div id='Q-7.2' name='Q-7.2' style='display:none;'>GOTO:8</div><div id='Q-8' name='Q-8' style='display:none;'> Was the conviction related to traffic, DUI, or driving?
 </div><div id='Q-8.1' name='Q-8.1' style='display:none;'> Was the conviction one of these?
 					<ul>
 						<li>Driving After Judgment Prohibited</li>
 						<li>Reckless Driving</li>
 						<li>Operation of a Moving Vehicle Causing Death</li>
 					</ul>
-</div><div id='Q-8.1.1' name='Q-8.1.1' style='display:none;'>GOTO:9</div><div id='Q-8.1.2' name='Q-8.1.2' style='display:none;'> <p class="result">This case is not eligible for expungement.</p> It is one of the "Title 21 offenses" that Delaware does not allow people to expunge. GOTO:25</div><div id='Q-8.2' name='Q-8.2' style='display:none;'>GOTO:9</div><div id='Q-9' name='Q-9' style='display:none;'> To expunge a case, all monetary obligations must be paid, waived, or converted to a civil judgment.<br> <br>Do you still owe fines, fees, or restitution on the case?
+</div><div id='Q-8.1.1' name='Q-8.1.1' style='display:none;'>GOTO:9</div><div id='Q-8.1.2' name='Q-8.1.2' style='display:none;'> <p class="result">Your record is not eligible for expungement.</p> It contains one of the "Title 21 offenses" that Delaware does not allow people to expunge. GOTO:25</div><div id='Q-8.2' name='Q-8.2' style='display:none;'>GOTO:9</div><div id='Q-9' name='Q-9' style='display:none;'> To expunge a case, all monetary obligations must be paid, waived, or converted to a civil judgment.<br> <br>Do you still owe fines, fees, or restitution on the case?
 </div><div id='Q-9.1' name='Q-9.1' style='display:none;'>GOTO:10</div><div id='Q-9.2' name='Q-9.2' style='display:none;'>GOTO:10</div><div id='Q-9.3' name='Q-9.3' style='display:none;'> When you apply for expungement, you may ask the court to waive the unpaid obligations or convert them to a civil judgement. If the court does not grant this request, you will need to pay all fines, fees, and restitution before you can seek expungement. GOTO:10</div><div id='Q-9.4' name='Q-9.4' style='display:none;'>GOTO:10</div><div id='Q-9.5' name='Q-9.5' style='display:none;'> It could be a good idea to find out. An ODS attorney can help you figure out if you owe money on the case. And even if you still owe money, you might be able to move forward by paying or petitioning the court. Here are some options:
 </div><div id='Q-9.5.1' name='Q-9.5.1' style='display:none;'> Okay. GOTO:25</div><div id='Q-9.5.2' name='Q-9.5.2' style='display:none;'> Okay. Here is the next question. GOTO:10</div><div id='Q-9.5.3' name='Q-9.5.3' style='display:none;'>GOTO:26.1</div><div id='Q-9.5.4' name='Q-9.5.4' style='display:none;'>GOTO:26.2</div><div id='Q-10' name='Q-10' style='display:none;'> Under Delaware law, some cases are ineligible for expungement. Let's check for those.<br> <br>Was the conviction one of these?
 	<ul>
@@ -3009,14 +2879,14 @@
 		<li>Rape 1st Degree</li>
 		<li>Sexual Assault of a Child by a Person in Position of Trust 1st Degree</li>
 	</ul>
-</div><div id='Q-10.1' name='Q-10.1' style='display:none;'> <p class="result">This case is not eligible for expungement.</p> It is one of the offenses that Delaware does not allow people to expunge. You might want to consider pursuing a pardon. GOTO:22</div><div id='Q-10.2' name='Q-10.2' style='display:none;'>GOTO:11</div><div id='Q-11' name='Q-11' style='display:none;'> Cases with specific victims are not allowed to be expunged. Let's check for those.<br> <br>Was the victim a child?
+</div><div id='Q-10.1' name='Q-10.1' style='display:none;'> <p class="result">Your record is not eligible for expungement.</p> It contains one of the offenses that Delaware does not allow people to expunge. You might want to consider pursuing a pardon. GOTO:22</div><div id='Q-10.2' name='Q-10.2' style='display:none;'>GOTO:11</div><div id='Q-11' name='Q-11' style='display:none;'> Cases with specific victims are not allowed to be expunged. Let's check for those.<br> <br>Was the victim a child?
 </div><div id='Q-11.1' name='Q-11.1' style='display:none;'>GOTO:11.2.2.1</div><div id='Q-11.2' name='Q-11.2' style='display:none;'> Was the victim over age 62?
 </div><div id='Q-11.2.1' name='Q-11.2.1' style='display:none;'>GOTO:11.2.2.1</div><div id='Q-11.2.2' name='Q-11.2.2' style='display:none;'> Was the victim a vulnerable adult?
 			<details class="in_question">
 				<summary class="in_question">Define "vulnerable adult"</summary>
 				<p>A "vulnerable adult" is a person 18 years of age or older who, by reason of isolation, sickness, debilitation, mental illness or physical, mental or cognitive disability, is easily susceptible to abuse, neglect, mistreatment, intimidation, manipulation, coercion or exploitation. It includes any adult for whom a guardian has been appointed.</p>
 			</details>
-</div><div id='Q-11.2.2.1' name='Q-11.2.2.1' style='display:none;'> <p class="semi_result">Because of who the victim was, this case is not eligible for mandatory expungement.</p> But it might be eligible for discretionary expungement. Let's find out. GOTO:17</div><div id='Q-11.2.2.2' name='Q-11.2.2.2' style='display:none;'>GOTO:12</div><div id='Q-12' name='Q-12' style='display:none;'> Some cases that are categorized as domestic violence are not allowed to be expunged. Let's check for those.<br> <br> Was your relationship to the victim one of these?
+</div><div id='Q-11.2.2.1' name='Q-11.2.2.1' style='display:none;'> <p class="semi_result">Because of who the victim was, your record is not eligible for mandatory expungement.</p> But it might be eligible for discretionary expungement. Let's find out. GOTO:17</div><div id='Q-11.2.2.2' name='Q-11.2.2.2' style='display:none;'>GOTO:12</div><div id='Q-12' name='Q-12' style='display:none;'> Some cases that are categorized as domestic violence are not allowed to be expunged. Let's check for those.<br> <br> Was your relationship to the victim one of these?
 	<ul>
 		<li>Spouse</li>
 		<li>Former spouse</li>
@@ -3047,7 +2917,7 @@
 			<li>Criminal Trespass in the 1st Degree</li>
 			<li>Harassment</li>
 		</ul>
-</div><div id='Q-12.1.1' name='Q-12.1.1' style='display:none;'> <p class="semi_result">Because of your relationship to the victim and the type of offense, this case is not eligible for mandatory expungement.</p> But it might be eligible for discretionary expungement. Let's find out. GOTO:17</div><div id='Q-12.1.2' name='Q-12.1.2' style='display:none;'> GOTO:13</div><div id='Q-12.1.3' name='Q-12.1.3' style='display:none;'> It could be a good idea to find out. If the case is one of the above types of domestic violence, then the case would not be eligible for mandatory expungement, but it could still be eligible for discretionary expungement. Here are some options:
+</div><div id='Q-12.1.1' name='Q-12.1.1' style='display:none;'> <p class="semi_result">Because of your relationship to the victim and the type of offense, your record is not eligible for mandatory expungement.</p> But it might be eligible for discretionary expungement. Let's find out. GOTO:17</div><div id='Q-12.1.2' name='Q-12.1.2' style='display:none;'>GOTO:13</div><div id='Q-12.1.3' name='Q-12.1.3' style='display:none;'> It could be a good idea to find out. If the case is one of the above types of domestic violence, then the case would not be eligible for mandatory expungement, but it could still be eligible for discretionary expungement. Here are some options:
 </div><div id='Q-12.1.3.1' name='Q-12.1.3.1' style='display:none;'> Okay. GOTO:25</div><div id='Q-12.1.3.2' name='Q-12.1.3.2' style='display:none;'> Okay. Here is the next question. GOTO:13</div><div id='Q-12.1.3.3' name='Q-12.1.3.3' style='display:none;'>GOTO:26.1</div><div id='Q-12.1.3.4' name='Q-12.1.3.4' style='display:none;'>GOTO:26.2</div><div id='Q-12.2' name='Q-12.2' style='display:none;'>GOTO:13</div><div id='Q-13' name='Q-13' style='display:none;'> Some types of convictions are not allowed to be expunged. Let's check for those.<br> <br>Was the conviction one of these?
 	<ul>
 		<li>Unlawfully administering drugs when charged in conjunction with a sexual offense as defined in § 761(f).</li>
@@ -3092,9 +2962,9 @@
 			<li>Criminal contempt</li>
 			<li>Criminal contempt of a domestic violence protective order or lethal violence protective order</li>
 		</ul>
-</div><div id='Q-13.2.1' name='Q-13.2.1' style='display:none;'> <p class="semi_result">Because of the type of offense, this case is not eligible for mandatory expungement.</p> But it might be eligible for discretionary expungement. Let's find out. GOTO:17</div><div id='Q-13.2.2' name='Q-13.2.2' style='display:none;'>GOTO:14</div><div id='Q-14' name='Q-14' style='display:none;'> Different charges have different waiting periods for mandatory expungement. Let's look into those.<br> <br>Was the conviction for Class G felony drug possession (16 Del. C. §4756)?
+</div><div id='Q-13.2.1' name='Q-13.2.1' style='display:none;'> <p class="semi_result">Because of the type of offense, your record is not eligible for mandatory expungement.</p> But it might be eligible for discretionary expungement. Let's find out. GOTO:17</div><div id='Q-13.2.2' name='Q-13.2.2' style='display:none;'>GOTO:14</div><div id='Q-14' name='Q-14' style='display:none;'> Different charges have different waiting periods for mandatory expungement. Let's look into those.<br> <br>Was the conviction for Class G felony drug possession (16 Del. C. §4756)?
 </div><div id='Q-14.1' name='Q-14.1' style='display:none;'> Have 5 years passed since the discharge date or conviction date, whichever is later?
-</div><div id='Q-14.1.1' name='Q-14.1.1' style='display:none;'>GOTO:23</div><div id='Q-14.1.2' name='Q-14.1.2' style='display:none;'> <p class="result">This case is likely to become eligible for mandatory expungement after the 5-year waiting period.</p> But it might be eligible for discretionary expungement sooner. Let's find out. GOTO:19</div><div id='Q-14.2' name='Q-14.2' style='display:none;'> Was the conviction for one of these?
+</div><div id='Q-14.1.1' name='Q-14.1.1' style='display:none;'>GOTO:23</div><div id='Q-14.1.2' name='Q-14.1.2' style='display:none;'> <p class="result">Your record is likely to become eligible for mandatory expungement after the 5-year waiting period.</p> But it might be eligible for discretionary expungement sooner. Let's find out. GOTO:19</div><div id='Q-14.2' name='Q-14.2' style='display:none;'> Was the conviction for one of these?
 		<ul>
 			<li>Miscellaneous drug crimes (16 Del. C. §4757)
 				<ul>
@@ -3108,7 +2978,7 @@
 			</li>
 			<li>Dealing in counterfeit and controlled substances (16 Del. C. §4758)</li>
 			<li>Maintaining a drug property (16 Del. C. §4760)</li>
-			<li>Possession of burglar’s tools or instruments (11 Del. C. §828)</li>
+			<li>Possession of burglar's tools or instruments (11 Del. C. §828)</li>
 			<li>Forgery 2nd degree (11 Del. C. §861)</li>
 			<li>Unlawful use of a payment card (11 Del. C. §903)</li>
 		</ul>
@@ -3117,8 +2987,8 @@
 				<summary class="in_question">Define "discharge date"</summary>
 				<p>The "discharge date" is the date you were released from incarceration, probation, or parole, whichever is later.</p> <!-- Or is it just released from incarceration? -->
 			</details>		
-</div><div id='Q-14.2.1.1' name='Q-14.2.1.1' style='display:none;'>GOTO:23</div><div id='Q-14.2.1.2' name='Q-14.2.1.2' style='display:none;'> <p class="result">This case is likely to become eligible for mandatory expungement after the 10-year waiting period.</p> But it might be eligible for discretionary expungement sooner. Let's find out. GOTO:18</div><div id='Q-14.2.2' name='Q-14.2.2' style='display:none;'>GOTO:15</div><div id='Q-15' name='Q-15' style='display:none;'> The number of felonies on your record can affect your eligibility. Let's look into those.<br> <br>How many felony convictions do you have?
-</div><div id='Q-15.1' name='Q-15.1' style='display:none;'> <p class="result">This case is likely not eligible for expungement because your record has more than one felony.</p> GOTO:25</div><div id='Q-15.2' name='Q-15.2' style='display:none;'> <p class="semi_result">This case is not eligible for mandatory expungement because it contains a felony (and that felony is not Class G felony drug possession).</p> But it might be eligible for discretionary expungement. Let's find out. GOTO:19</div><div id='Q-15.3' name='Q-15.3' style='display:none;'>GOTO:16</div><div id='Q-16' name='Q-16' style='display:none;'> The types of convictions on your record can affect your eligibility. So can the amount of time that has passed. Let's look into those.<br> <br>What conviction levels are in this case?
+</div><div id='Q-14.2.1.1' name='Q-14.2.1.1' style='display:none;'>GOTO:23</div><div id='Q-14.2.1.2' name='Q-14.2.1.2' style='display:none;'> <p class="result">Your record is likely to become eligible for mandatory expungement after the 10-year waiting period.</p> But it might be eligible for discretionary expungement sooner. Let's find out. GOTO:18</div><div id='Q-14.2.2' name='Q-14.2.2' style='display:none;'>GOTO:15</div><div id='Q-15' name='Q-15' style='display:none;'> The number of felonies on your record can affect your eligibility. Let's look into those.<br> <br>How many felony convictions do you have?
+</div><div id='Q-15.1' name='Q-15.1' style='display:none;'> <p class="result">Your record is likely not eligible for expungement because it contains more than one felony.</p> GOTO:25</div><div id='Q-15.2' name='Q-15.2' style='display:none;'> <p class="semi_result">Your record is not eligible for mandatory expungement because it contains a felony (and that felony is not Class G felony drug possession).</p> But it might be eligible for discretionary expungement. Let's find out. GOTO:19</div><div id='Q-15.3' name='Q-15.3' style='display:none;'>GOTO:16</div><div id='Q-16' name='Q-16' style='display:none;'> The types of convictions on your record can affect your eligibility. So can the amount of time that has passed. Let's look into those.<br> <br>What conviction levels are in this case?
 </div><div id='Q-16.1' name='Q-16.1' style='display:none;'> Do you have convictions from any other cases?
 </div><div id='Q-16.1.1' name='Q-16.1.1' style='display:none;'> Were the other convictions one or a combination of these?
 			<ul>
@@ -3126,18 +2996,18 @@
 				<li>Underage Possession of Personal Use Quantity of Marijuana (16 Del. C. § 4764(c))</li>
 				<li>Motor Vehicle Offense (Title 21)</li>
 			</ul>
-</div><div id='Q-16.1.1.1' name='Q-16.1.1.1' style='display:none;'> The other convictions could be eligible for mandatory expungement right now. But your situation is complex. You can get in touch with ODS to help you understand your eligibility and your options. <!-- What's their move here: Continue to find out if you can expunge all at once? Apply to expunge the other ones first? (Would they then have to wait ten years to expunge this one, or no?) --> GOTO:25</div><div id='Q-16.1.1.2' name='Q-16.1.1.2' style='display:none;'> <p class="result">This case is not eligible for expungement.</p> Delaware doesn’t allow the types of convictions on your record to be expunged. <!-- explanation --> GOTO:25</div><div id='Q-16.1.2' name='Q-16.1.2' style='display:none;'> Have 3 years passed since the conviction?
-</div><div id='Q-16.1.2.1' name='Q-16.1.2.1' style='display:none;'>GOTO:23</div><div id='Q-16.1.2.2' name='Q-16.1.2.2' style='display:none;'> <p class="result">This case is likely to become eligible for mandatory expungement after the 3-year waiting period.</p> <p class="result">Also, this case is likely to become eligible for discretionary expungement after the 3-year waiting period.</p> GOTO:25</div><div id='Q-16.2' name='Q-16.2' style='display:none;'>GOTO:16.3</div><div id='Q-16.3' name='Q-16.3' style='display:none;'> Do you have convictions from any other cases?
+</div><div id='Q-16.1.1.1' name='Q-16.1.1.1' style='display:none;'> The other convictions could be eligible for mandatory expungement right now. But your situation is complex. You can get in touch with ODS to help you understand your eligibility and your options. <!-- What's their move here: Continue to find out if you can expunge all at once? Apply to expunge the other ones first? (Would they then have to wait ten years to expunge this one, or no?) --> GOTO:25</div><div id='Q-16.1.1.2' name='Q-16.1.1.2' style='display:none;'> <p class="result">Your record is not eligible for expungement.</p> Delaware doesn't allow the types of convictions on your record to be expunged. <!-- explanation --> GOTO:25</div><div id='Q-16.1.2' name='Q-16.1.2' style='display:none;'> Have 3 years passed since the conviction?
+</div><div id='Q-16.1.2.1' name='Q-16.1.2.1' style='display:none;'>GOTO:23</div><div id='Q-16.1.2.2' name='Q-16.1.2.2' style='display:none;'> <p class="result">Your record is likely to become eligible for mandatory expungement after the 3-year waiting period.</p> <!-- <p class="result">Also, your record is likely to become eligible for discretionary expungement after the 3-year waiting period.</p> --> GOTO:25</div><div id='Q-16.2' name='Q-16.2' style='display:none;'>GOTO:16.3</div><div id='Q-16.3' name='Q-16.3' style='display:none;'> Do you have convictions from any other cases?
 </div><div id='Q-16.3.1' name='Q-16.3.1' style='display:none;'> Were the other convictions one or a combination of these?
 			<ul>
 				<li>Underage Possession of Alcohol (4 Del. C. § 904(e))</li>
 				<li>Underage Possession of Personal Use Quantity of Marijuana (16 Del. C. § 4764(c))</li>
 				<li>Motor Vehicle Offense (Title 21)</li>
 			</ul>
-</div><div id='Q-16.3.1.1' name='Q-16.3.1.1' style='display:none;'> These other convictions could be eligible for mandatory expungement right now. But your situation is complex. You can get in touch with ODS to help you understand your eligibility and your options. <!-- What's their move here: Continue to find out if you can expunge all at once? Apply to expunge the other ones first? (Would they then have to wait ten years to expunge this one, or no?) --> GOTO:25</div><div id='Q-16.3.1.2' name='Q-16.3.1.2' style='display:none;'> <p class="result">This case is not eligible for expungement.</p> Delaware doesn’t allow the types of convictions on your record to be expunged. <!-- explanation --> GOTO:25</div><div id='Q-16.3.2' name='Q-16.3.2' style='display:none;'> Have 5 years passed since the conviction?
-</div><div id='Q-16.3.2.1' name='Q-16.3.2.1' style='display:none;'>GOTO:23</div><div id='Q-16.3.2.2' name='Q-16.3.2.2' style='display:none;'> <p class="result">This case is likely to become eligible for mandatory expungement after the 5-year waiting period.</p> But it might be eligible for discretionary expungement sooner. Let's find out. GOTO:21.2</div><div id='Q-17' name='Q-17' style='display:none;'> The number of felonies on your record can affect your eligibility. Let's look into those.<br> <br>How many felony convictions do you have?
-</div><div id='Q-17.1' name='Q-17.1' style='display:none;'> <p class="result">This case is likely not eligible for discretionary expungement because your record has more than one felony.</p> GOTO:25</div><div id='Q-17.2' name='Q-17.2' style='display:none;'>GOTO:19</div><div id='Q-17.3' name='Q-17.3' style='display:none;'>GOTO:19</div><div id='Q-18' name='Q-18' style='display:none;'> The number of felonies on your record can affect your eligibility. Let's look into those.<br> <br>How many felony convictions do you have?
-</div><div id='Q-18.1' name='Q-18.1' style='display:none;'> <p class="result">This case is likely not eligible for discretionary expungement because your record has more than one felony.</p> GOTO:25</div><div id='Q-18.2' name='Q-18.2' style='display:none;'>GOTO:19</div><div id='Q-18.3' name='Q-18.3' style='display:none;'>GOTO:21</div><div id='Q-19' name='Q-19' style='display:none;'> Some types of convictions require a pardon before they can be eligible for expungement. Let's check for those.<br> <br>Was the conviction one of these?
+</div><div id='Q-16.3.1.1' name='Q-16.3.1.1' style='display:none;'> These other convictions could be eligible for mandatory expungement right now. But your situation is complex. You can get in touch with ODS to help you understand your eligibility and your options. <!-- What's their move here: Continue to find out if you can expunge all at once? Apply to expunge the other ones first? (Would they then have to wait ten years to expunge this one, or no?) --> GOTO:25</div><div id='Q-16.3.1.2' name='Q-16.3.1.2' style='display:none;'> <p class="result">Your record is not eligible for expungement.</p> Delaware doesn't allow the types of convictions on your record to be expunged. <!-- explanation --> GOTO:25</div><div id='Q-16.3.2' name='Q-16.3.2' style='display:none;'> Have 5 years passed since the conviction?
+</div><div id='Q-16.3.2.1' name='Q-16.3.2.1' style='display:none;'>GOTO:23</div><div id='Q-16.3.2.2' name='Q-16.3.2.2' style='display:none;'> <p class="result">Your record is likely to become eligible for mandatory expungement after the 5-year waiting period.</p> But it might be eligible for discretionary expungement sooner. Let's find out. GOTO:21.2</div><div id='Q-17' name='Q-17' style='display:none;'> The number of felonies on your record can affect your eligibility. Let's look into those.<br> <br>How many felony convictions do you have?
+</div><div id='Q-17.1' name='Q-17.1' style='display:none;'> <p class="result">Your record is likely not eligible for discretionary expungement because it contains more than one felony.</p> GOTO:25</div><div id='Q-17.2' name='Q-17.2' style='display:none;'>GOTO:19</div><div id='Q-17.3' name='Q-17.3' style='display:none;'>GOTO:19</div><div id='Q-18' name='Q-18' style='display:none;'> The number of felonies on your record can affect your eligibility. Let's look into those.<br> <br>How many felony convictions do you have?
+</div><div id='Q-18.1' name='Q-18.1' style='display:none;'> <p class="result">Your record is likely not eligible for discretionary expungement because it contains more than one felony.</p> GOTO:25</div><div id='Q-18.2' name='Q-18.2' style='display:none;'>GOTO:19</div><div id='Q-18.3' name='Q-18.3' style='display:none;'>GOTO:21</div><div id='Q-19' name='Q-19' style='display:none;'> Some types of convictions require a pardon before they can be eligible for expungement. Let's check for those.<br> <br>Was the conviction one of these?
 	<ul>
 		<li>Violent Felony (11 Del. C. 4201(c))</li>
 		<li>Infirm/Vulnerable Persons (16 Del. C. § 1136 or 31 Del. C. § 3913)</li>
@@ -3148,12 +3018,12 @@
 		<li>Coercion (11 Del. C. § 791)</li>
 		<li>Unlawful Dealing With a Child (11 Del. C. § 1106)</li>
 	</ul>
-</div><div id='Q-19.1' name='Q-19.1' style='display:none;'> <p class="result">This case is not eligible for discretionary expungement right now.</p> You might want to consider pursuing a pardon. If you can get an unconditional pardon for this case, it might then become eligible for discretionary expungement. GOTO:22</div><div id='Q-19.2' name='Q-19.2' style='display:none;'>GOTO:20</div><div id='Q-19.3' name='Q-19.3' style='display:none;'> It could be a good idea to find out. If you have one of these convictions, you wouldn't be eligible for expungement right now, but you could become eligible if you can obtain a pardon. Here are some options:
+</div><div id='Q-19.1' name='Q-19.1' style='display:none;'> <p class="result">Your record is not eligible for discretionary expungement right now.</p> You might want to consider pursuing a pardon. If you can get an unconditional pardon for this case, it might then become eligible for discretionary expungement. GOTO:22</div><div id='Q-19.2' name='Q-19.2' style='display:none;'>GOTO:20</div><div id='Q-19.3' name='Q-19.3' style='display:none;'> It could be a good idea to find out. If you have one of these convictions, you wouldn't be eligible for expungement right now, but you could become eligible if you can obtain a pardon. Here are some options:
 </div><div id='Q-19.3.1' name='Q-19.3.1' style='display:none;'> Okay. GOTO:25</div><div id='Q-19.3.2' name='Q-19.3.2' style='display:none;'> Okay. Here is the next question. GOTO:20</div><div id='Q-19.3.3' name='Q-19.3.3' style='display:none;'>GOTO:26.1</div><div id='Q-19.3.4' name='Q-19.3.4' style='display:none;'>GOTO:26.2</div><div id='Q-20' name='Q-20' style='display:none;'> Do you have convictions from any other cases?
-</div><div id='Q-20.1' name='Q-20.1' style='display:none;'> <p class="result">Your record is not eligible for discretionary expungement.</p> <!-- explanation --> GOTO:25</div><div id='Q-20.2' name='Q-20.2' style='display:none;'> Have 7 years passed since the discharge date or conviction date, whichever is later?
+</div><div id='Q-20.1' name='Q-20.1' style='display:none;'> <p class="result">Your record is not eligible for discretionary expungement.</p> Delaware doesn't allow the type of conviction on your record to be expunged when you have additional convictions. <!-- explanation --> GOTO:25</div><div id='Q-20.2' name='Q-20.2' style='display:none;'> Have 7 years passed since the discharge date or conviction date, whichever is later?
 </div><div id='Q-20.2.1' name='Q-20.2.1' style='display:none;'>GOTO:24</div><div id='Q-20.2.2' name='Q-20.2.2' style='display:none;'> <p class="result">Your record is likely to become eligible for mandatory expungement after the 7-year waiting period.</p> GOTO:25</div><div id='Q-21' name='Q-21' style='display:none;'> Do you have convictions from any other cases?
-</div><div id='Q-21.1' name='Q-21.1' style='display:none;'> <p class="result">Your criminal record is not eligible for discretionary expungement.</p> <!-- explanation --> GOTO:25</div><div id='Q-21.2' name='Q-21.2' style='display:none;'> Have 3 years passed since the discharge date or conviction date, whichever is later? <!-- Are all references to conviction (versus the later of discharge or conviction) date correct? -->
-</div><div id='Q-21.2.1' name='Q-21.2.1' style='display:none;'>GOTO:24</div><div id='Q-21.2.2' name='Q-21.2.2' style='display:none;'> <p class="result">This case is likely to become eligible for mandatory expungement after the 3-year waiting period.</p> GOTO:25</div><div id='Q-22' name='Q-22' style='display:none;'> The Delaware Department of Labor's <a target="_blank" href="https://labor.delaware.gov/apex/">APEX Program</a> helps people through the pardon process. GOTO:25</div><div id='Q-23' name='Q-23' style='display:none;'> <p class="result">Your criminal record could be eligible for mandatory expungement now.</p> GOTO:25</div><div id='Q-24' name='Q-24' style='display:none;'> <p class="result">Your criminal record could be eligible for discretionary expungement now.</p> GOTO:25</div><div id='Q-25' name='Q-25' style='display:none;'> Before you close this tab, <b>remember to print this page</b> if you want to keep a copy. GOTO:26</div><div id='Q-26' name='Q-26' style='display:none;'> What would you like to do next?
+</div><div id='Q-21.1' name='Q-21.1' style='display:none;'> <p class="result">Your criminal record is not eligible for discretionary expungement.</p> Delaware doesn't allow the type of conviction on your record to be expunged when you have additional convictions. <!-- explanation --> GOTO:25</div><div id='Q-21.2' name='Q-21.2' style='display:none;'> Have 3 years passed since the discharge date or conviction date, whichever is later? <!-- Are all references to conviction (versus the later of discharge or conviction) date correct? -->
+</div><div id='Q-21.2.1' name='Q-21.2.1' style='display:none;'>GOTO:24</div><div id='Q-21.2.2' name='Q-21.2.2' style='display:none;'> <p class="result">Your record is likely to become eligible for mandatory expungement after the 3-year waiting period.</p> GOTO:25</div><div id='Q-22' name='Q-22' style='display:none;'> The Delaware Department of Labor's <a target="_blank" href="https://labor.delaware.gov/apex/">APEX Program</a> helps people through the pardon process. GOTO:25</div><div id='Q-23' name='Q-23' style='display:none;'> <p class="result">Your criminal record could be eligible for mandatory expungement now.</p> GOTO:25</div><div id='Q-24' name='Q-24' style='display:none;'> <p class="result">Your criminal record could be eligible for discretionary expungement now.</p> GOTO:25</div><div id='Q-25' name='Q-25' style='display:none;'> Before you close this tab, <b>remember to print this page</b> if you want to keep a copy. GOTO:26</div><div id='Q-26' name='Q-26' style='display:none;'> What would you like to do next?
 </div><div id='Q-26.1' name='Q-26.1' style='display:none;'> The calendar opened in another tab.
 </div><div id='Q-26.2' name='Q-26.2' style='display:none;'> The contact form opened in another tab.
 </div><div id='Q-26.3' name='Q-26.3' style='display:none;'> The phone number is 302-577-5217.
@@ -3286,7 +3156,7 @@
 <script>
 	var QVnames = [['1','start'],['1.1','1.1'],['1.2','1.2'],['2','youth'],['3','adult'],['3.1','3.1'],['3.2','3.2'],['4','current_sentence_check'],['4.1','4.1'],['4.2','4.2'],['5','in_favor_check'],['5.1','5.1'],['5.2','5.2'],['5.3','5.3'],['5.4','5.4'],['5.5','5.5'],['5.6','5.6'],['5.7','5.7'],['5.7.1','5.7.1'],['5.7.2','5.7.2'],['5.7.3','5.7.3'],['5.7.4','5.7.4'],['5.7.5','is_in_favor'],['5.8','5.8'],['5.9','in_favor_unsure'],['5.9.1','5.9.1'],['5.9.2','5.9.2'],['5.9.3','5.9.3'],['5.9.4','5.9.4'],['6','mandatory_special_check'],['6.1','6.1'],['6.2','6.2'],['7','previous_expungement_check'],['7.1','7.1'],['7.1.1','7.1.1'],['7.1.1.1','7.1.1.1'],['7.1.1.2','7.1.1.2'],['7.1.2','not_two_felonies'],['7.1.2.1','7.1.2.1'],['7.1.2.1.1','7.1.2.1.1'],['7.1.2.1.1.1','7.1.2.1.1.1'],['7.1.2.1.1.2','7.1.2.1.1.2'],['7.1.2.1.2','7.1.2.1.2'],['7.1.2.2','7.1.2.2'],['7.2','7.2'],['8','motor_vehicle_check'],['8.1','8.1'],['8.1.1','8.1.1'],['8.1.2','8.1.2'],['8.2','8.2'],['9','fee_check'],['9.1','9.1'],['9.2','9.2'],['9.3','9.3'],['9.4','9.4'],['9.5','9.5'],['9.5.1','9.5.1'],['9.5.2','9.5.2'],['9.5.3','9.5.3'],['9.5.4','9.5.4'],['10','pardon_only_check'],['10.1','10.1'],['10.2','10.2'],['11','victim_check'],['11.1','11.1'],['11.2','11.2'],['11.2.1','11.2.1'],['11.2.2','11.2.2'],['11.2.2.1','excluded_by_victim'],['11.2.2.2','11.2.2.2'],['12','victim_relationship_check'],['12.1','12.1'],['12.1.1','excluded_by_victim_relationship'],['12.1.2','12.1.2'],['12.1.3','12.1.3'],['12.1.3.1','12.1.3.1'],['12.1.3.2','12.1.3.2'],['12.1.3.3','12.1.3.3'],['12.1.3.4','12.1.3.4'],['12.2','12.2'],['13','mandatory_excluded_offense_check'],['13.1','13.1'],['13.2','13.2'],['13.2.1','excluded_by_offense'],['13.2.2','13.2.2'],['14','mandatory_charge_waiting_period_check'],['14.1','14.1'],['14.1.1','14.1.1'],['14.1.2','14.1.2'],['14.2','14.2'],['14.2.1','14.2.1'],['14.2.1.1','14.2.1.1'],['14.2.1.2','14.2.1.2'],['14.2.2','14.2.2'],['15','mandatory_felony_check'],['15.1','15.1'],['15.2','15.2'],['15.3','15.3'],['16','mandatory_waiting_period_check'],['16.1','16.1'],['16.1.1','16.1.1'],['16.1.1.1','16.1.1.1'],['16.1.1.2','16.1.1.2'],['16.1.2','16.1.2'],['16.1.2.1','16.1.2.1'],['16.1.2.2','16.1.2.2'],['16.2','16.2'],['16.3','misdemeanors_and_under'],['16.3.1','16.3.1'],['16.3.1.1','16.3.1.1'],['16.3.1.2','16.3.1.2'],['16.3.2','16.3.2'],['16.3.2.1','16.3.2.1'],['16.3.2.2','16.3.2.2'],['17','discretionary_felony_check_exclusion_yes'],['17.1','17.1'],['17.2','17.2'],['17.3','17.3'],['18','discretionary_felony_check_exclusion_no'],['18.1','18.1'],['18.2','18.2'],['18.3','18.3'],['19','discretionary_excluded_offense_check'],['19.1','19.1'],['19.2','19.2'],['19.3','19.3'],['19.3.1','19.3.1'],['19.3.2','19.3.2'],['19.3.3','19.3.3'],['19.3.4','19.3.4'],['20','discretionary_waiting_period_7_check'],['20.1','20.1'],['20.2','20.2'],['20.2.1','20.2.1'],['20.2.2','20.2.2'],['21','discretionary_waiting_period_3_check'],['21.1','21.1'],['21.2','discretionary_3_year_wait_check'],['21.2.1','21.2.1'],['21.2.2','21.2.2'],['22','potential_pardon'],['23','potential_mandatory'],['24','potential_discretionary'],['25','print_reminder'],['26','what_next'],['26.1','clinic'],['26.2','email'],['26.3','phone'],['26.4','26.4'],['26.5','26.5']];
 </script>
-</textarea
+  </textarea
         ><textarea
           id="transcript"
           name="transcript"
@@ -3301,11 +3171,23 @@
             border-top: solid 1px #ddd;
           "
         >
+          <p align="center">
+            <a
+              href="javascript:void('');"
+              onclick="shoh('about'); hide('credits');"
+              >about</a
+            >
+            |
+            <a
+              href="javascript:void('');"
+              onclick="shoh('credits'); hide('about');"
+              >make your own</a
+            >
+          </p>
           <div id="credits" class="credits" style="display: none">
             <div class="credit_text">
-              <p><b>Delaware expungement eligibility</b></p>
               <p>
-                Created by the
+                Created for the
                 <a target="_blank" href="https://ods.delaware.gov/"
                   >Delaware Office of Defense Services</a
                 >
@@ -3314,21 +3196,24 @@
                 If you are a defender office interested in making your own,
                 please don't hesitate to
                 <a target="_blank" href="mailto: dawnippolito@gmail.com"
-                  >connect with our volunteer programmer, Dawn I</a
+                  >connect with our volunteer programmer, Dawn Ippolito</a
                 >, to help you out.
               </p>
             </div>
           </div>
-          <p align="center">
-            <a href="javascript:void('');" onClick="shoh('credits');"
-              >credits</a
-            >
-          </p>
+          <div id="about" class="credits" style="display: none">
+            <div class="credit_text">
+              <h2 style="font-size: 1em">
+                Is your criminal record eligible for expungement in Delaware?
+              </h2>
+              <p>Answering these questions can help you find out.</p>
+            </div>
+          </div>
         </div>
-      </div> <!-- added for prettier -->
+      </div>
+      <!-- previous div added for prettier -->
     </form>
-<!--    </div></div> --> <!-- removed for prettier -->
-
+    <!-- </div></div> | removed for prettier -->
     <script type="text/javascript">
       var QNum = 0;
       var Qhtml = "";
